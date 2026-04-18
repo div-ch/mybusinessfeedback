@@ -505,6 +505,18 @@
       }
       html.js-anim-ready .reveal { opacity: 1 !important; transform: none !important; }
     }
+  
+    /* Industries dropdown */
+    .nav-dropdown { position: relative; }
+    .nav-dropdown-trigger { display: inline-flex; align-items: center; gap: 4px; cursor: pointer; color: var(--ink-soft); transition: color 0.2s ease; font: inherit; font-size: inherit; }
+    .nav-dropdown-trigger:hover, .nav-dropdown:focus-within .nav-dropdown-trigger { color: var(--forest); }
+    .nav-dropdown-trigger::after { content: ""; border-left: 3.5px solid transparent; border-right: 3.5px solid transparent; border-top: 4px solid currentColor; margin-top: 1px; }
+    .nav-dropdown-menu { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; padding: 6px 0; min-width: 200px; margin-top: 10px; box-shadow: 0 4px 20px rgba(15, 15, 14, 0.1); z-index: 60; }
+    .nav-dropdown-menu::before { content: ""; position: absolute; top: -10px; left: 0; right: 0; height: 10px; }
+    .nav-dropdown:hover .nav-dropdown-menu, .nav-dropdown:focus-within .nav-dropdown-menu { display: block; }
+    .nav-dropdown-menu a { display: block; padding: 8px 18px; font-size: 13px; color: var(--ink-soft); transition: background 0.15s, color 0.15s; white-space: nowrap; }
+    .nav-dropdown-menu a:hover { background: var(--cream-warm); color: var(--ink); }
+    @media (max-width: 720px) { .nav-dropdown { display: none; } }
   </style>
 </head>
 <body>
@@ -527,6 +539,14 @@
       </a>
       <nav aria-label="Primary">
         <a href="/how-it-works/">How it works</a>
+        <span class="nav-dropdown">
+          <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Industries</button>
+          <span class="nav-dropdown-menu" role="menu">
+            <a href="/for-law-firms/" role="menuitem">For Law Firms</a>
+            <a href="/for-medical-practices/" role="menuitem">For Medical Practices</a>
+            <a href="/for-service-businesses/" role="menuitem">For Service Businesses</a>
+          </span>
+        </span>
         <a href="/pricing/">Pricing</a>
         <a href="/blog/">Blog</a>
         <a href="/faq/">FAQ</a>
