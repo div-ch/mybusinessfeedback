@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
-Disallow: /_template/
+Disallow: /kitsaplaw/
+Disallow: /hemeoncall/
+Disallow: /2hlaw/
+
+Sitemap: https://mybusinessfeedback.com/sitemap.xml
