@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | My Business Feedback</title>
+  <meta name="description" content="Ideas on customer communication, feedback loops, and building stronger business relationships." />
+  <link rel="canonical" href="https://mybusinessfeedback.com/blog/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Blog | My Business Feedback" />
+  <meta property="og:description" content="Ideas on customer communication, feedback loops, and building stronger business relationships." />
+  <meta property="og:url" content="https://mybusinessfeedback.com/blog/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Blog | My Business Feedback" />
+  <meta name="twitter:description" content="Ideas on customer communication, feedback loops, and building stronger business relationships." />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'><rect width='44' height='44' fill='%23FAF8F3'/><circle cx='15' cy='18' r='7' fill='none' stroke='%230F0F0E' stroke-width='1.6'/><circle cx='29' cy='26' r='7' fill='none' stroke='%23A04030' stroke-width='1.6'/><circle cx='22' cy='22' r='1.9' fill='%23A04030'/></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QN8FS3SJ5R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QN8FS3SJ5R');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "My Business Feedback Blog",
+    "description": "Ideas on customer communication, feedback loops, and building stronger business relationships.",
+    "url": "https://mybusinessfeedback.com/blog/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "My Business Feedback"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mybusinessfeedback.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://mybusinessfeedback.com/blog/" }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --cream: #FAF8F3;
+      --cream-warm: #F3EFE4;
+      --paper: #FFFFFF;
+      --ink: #0F0F0E;
+      --ink-soft: #2A2925;
+      --muted: #57564F;
+      --muted-light: #8B8A82;
+      --rule: rgba(15, 15, 14, 0.14);
+      --rule-soft: rgba(15, 15, 14, 0.06);
+      --forest: #1A4D3C;
+      --forest-dark: #143729;
+      --rust: #A04030;
+      --gold: #C89B3C;
+      --star-gold: #E8B84D;
+
+      --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --font-body: 'Instrument Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+      --container-wide: 1280px;
+      --container: 1120px;
+      --container-narrow: 860px;
+
+      --pad-x: clamp(1.25rem, 4vw, 3rem);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+    img, svg { display: block; max-width: 100%; }
+    ::selection { background: var(--ink); color: var(--cream); }
+
+    .masthead {
+      border-bottom: 1px solid var(--rule);
+      padding: 14px var(--pad-x);
+      background: var(--cream);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .masthead-inner {
+      max-width: var(--container-wide);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .wordmark {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: -0.01em;
+      font-variation-settings: "opsz" 14;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ink);
+    }
+    .wordmark-mark { width: 34px; height: 34px; flex-shrink: 0; transition: transform 0.4s ease; }
+    .wordmark:hover .wordmark-mark { transform: rotate(8deg); }
+    .masthead nav { display: flex; align-items: center; gap: 28px; font-size: 14px; }
+    .masthead nav a { color: var(--ink-soft); transition: color 0.2s ease; }
+    .masthead nav a:hover { color: var(--forest); }
+    .masthead nav .nav-cta {
+      padding: 8px 16px;
+      border: 1px solid var(--ink);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    .masthead nav .nav-cta:hover { background: var(--ink); color: var(--cream); }
+    @media (max-width: 720px) {
+      .masthead nav a:not(.nav-cta) { display: none; }
+    }
+
+    .meta-strip {
+      border-bottom: 1px solid var(--rule);
+      padding: 10px var(--pad-x);
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: var(--cream);
+    }
+    .meta-strip-inner {
+      max-width: var(--container-wide);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .meta-strip span { display: inline-flex; align-items: center; gap: 8px; }
+    .meta-strip .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--muted); display: inline-block; }
+    @media (max-width: 720px) {
+      .meta-strip-inner > :nth-child(n+3) { display: none; }
+    }
+
+    .blog-header {
+      padding: clamp(3rem, 8vw, 6rem) var(--pad-x) clamp(1.5rem, 3vw, 2rem);
+      max-width: var(--container-narrow);
+      margin: 0 auto;
+    }
+    .blog-header h1 {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 4.5vw, 2.75rem);
+      line-height: 1.1;
+      letter-spacing: -0.025em;
+      font-weight: 400;
+      font-variation-settings: "opsz" 72;
+      max-width: 26ch;
+    }
+    .blog-header h1 em { font-style: italic; color: var(--rust); }
+    .blog-intro {
+      margin-top: 20px;
+      font-family: var(--font-display);
+      font-size: clamp(1rem, 1.3vw, 1.15rem);
+      line-height: 1.5;
+      color: var(--ink-soft);
+      font-weight: 400;
+      font-variation-settings: "opsz" 24;
+      max-width: 58ch;
+    }
+
+    .blog-list {
+      max-width: var(--container-narrow);
+      margin: 0 auto;
+      padding: 0 var(--pad-x) clamp(3rem, 8vw, 6rem);
+    }
+    .blog-card {
+      border-top: 1px solid var(--rule);
+      padding: clamp(1.5rem, 3vw, 2.25rem) 0;
+    }
+    .blog-card:last-child {
+      border-bottom: 1px solid var(--rule);
+    }
+    .blog-card-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+      line-height: 1.15;
+      letter-spacing: -0.015em;
+      font-weight: 400;
+      font-variation-settings: "opsz" 36;
+      max-width: 34ch;
+    }
+    .blog-card-title a {
+      color: var(--ink);
+      transition: color 0.2s ease;
+    }
+    .blog-card-title a:hover {
+      color: var(--rust);
+    }
+    .blog-card-excerpt {
+      margin-top: 10px;
+      color: var(--ink-soft);
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 60ch;
+    }
+    .blog-card-link {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--rule);
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+    .blog-card-link:hover {
+      color: var(--forest);
+      border-color: var(--forest);
+    }
+
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: clamp(2.5rem, 5vw, 4rem) var(--pad-x) clamp(1.5rem, 3vw, 2rem);
+      background: var(--cream);
+    }
+    .footer-inner {
+      max-width: var(--container-wide);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: clamp(2rem, 4vw, 3rem);
+    }
+    @media (min-width: 760px) { .footer-inner { grid-template-columns: 2fr 1fr 1fr; } }
+    .footer-brand-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .footer-brand-mark { width: 36px; height: 36px; flex-shrink: 0; }
+    .footer-brand-name {
+      font-family: var(--font-display);
+      font-size: 20px;
+      letter-spacing: -0.01em;
+      font-weight: 500;
+      color: var(--ink);
+      font-variation-settings: "opsz" 18;
+    }
+    .footer-brand {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 2.4vw, 2rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      font-weight: 400;
+      max-width: 22ch;
+      font-variation-settings: "opsz" 48;
+      color: var(--ink-soft);
+    }
+    .footer-brand em { font-style: italic; color: var(--rust); }
+    .footer-col-title {
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 14px; }
+    .footer-links a {
+      color: var(--ink-soft);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .footer-links a:hover { border-color: var(--ink-soft); }
+    .footer-bottom {
+      max-width: var(--container-wide);
+      margin: clamp(2.5rem, 5vw, 4rem) auto 0;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+
+    .reveal { opacity: 1; transform: none; }
+    html.js-anim-ready .reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    html.js-anim-ready .reveal.is-in { opacity: 1; transform: none; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      html.js-anim-ready .reveal { opacity: 1 !important; transform: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="mbf-mark" viewBox="0 0 44 44">
+        <circle cx="15" cy="18" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="29" cy="26" r="7" fill="none" stroke="#A04030" stroke-width="1.5"/>
+        <circle cx="22" cy="22" r="1.9" fill="#A04030"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a href="/" class="wordmark" aria-label="My Business Feedback home">
+        <svg class="wordmark-mark" aria-hidden="true"><use href="#mbf-mark"/></svg>
+        <span>My Business Feedback</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="/how-it-works/">How it works</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/blog/">Blog</a>
+        <a href="/faq/">FAQ</a>
+        <a href="mailto:info@mybusinessfeedback.com" class="nav-cta">Partner with us</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="meta-strip">
+    <div class="meta-strip-inner">
+      <span>Blog</span>
+      <span><span class="dot"></span> Communication</span>
+      <span><span class="dot"></span> Feedback</span>
+      <span><span class="dot"></span> Business Relationships</span>
+    </div>
+  </div>
+
+  <main>
+    <div class="blog-header reveal">
+      <h1>Ideas on customer communication, feedback loops, and <em>business relationships</em></h1>
+      <p class="blog-intro">Most businesses know that listening to customers matters. Fewer know how to do it well. This blog explores the practical side of client communication: how to ask for feedback at the right moments, what to do with the answers, and how small changes in your feedback process can shift retention, referrals, and the overall quality of your client relationships. Written for law firms, medical practices, and service businesses that want to grow by paying closer attention.</p>
+    </div>
+
+    <div class="blog-list">
+
+      <div class="blog-card reveal">
+        <h2 class="blog-card-title"><a href="/blog/client-communication-retention-law-firms/">Why Client Communication Is the Real Retention Tool for Law Firms</a></h2>
+        <p class="blog-card-excerpt">Firms spend thousands acquiring new clients while ignoring the ones they already have. The retention gap is not about the quality of legal work. It is about the conversations that never happen between intake and invoice.</p>
+        <a href="/blog/client-communication-retention-law-firms/" class="blog-card-link">Read</a>
+      </div>
+
+      <div class="blog-card reveal">
+        <h2 class="blog-card-title"><a href="/blog/post-case-conversation-law-firms-miss/">The Post-Case Conversation Most Law Firms Skip (And What It's Costing Them)</a></h2>
+        <p class="blog-card-excerpt">When a matter closes, most firms send a final invoice and move on. That silence in the weeks after resolution is where referrals, repeat business, and honest insight about your firm go to die.</p>
+        <a href="/blog/post-case-conversation-law-firms-miss/" class="blog-card-link">Read</a>
+      </div>
+
+      <div class="blog-card reveal">
+        <h2 class="blog-card-title"><a href="/blog/client-feedback-referral-pipelines/">How Top-Performing Firms Turn Client Feedback Into Referral Pipelines</a></h2>
+        <p class="blog-card-excerpt">The firms with the strongest referral numbers are not asking for referrals directly. They are building a feedback habit that identifies satisfied clients at the exact moment they are most likely to recommend someone.</p>
+        <a href="/blog/client-feedback-referral-pipelines/" class="blog-card-link">Read</a>
+      </div>
+
+      <div class="blog-card reveal">
+        <h2 class="blog-card-title"><a href="/blog/hipaa-patient-feedback-loop/">Building a HIPAA-Compliant Patient Feedback Loop That Actually Works</a></h2>
+        <p class="blog-card-excerpt">Collecting patient feedback without violating privacy rules is not as complicated as most practices assume. The challenge is designing a process that patients will actually use, not just one that satisfies your compliance officer.</p>
+        <a href="/blog/hipaa-patient-feedback-loop/" class="blog-card-link">Read</a>
+      </div>
+
+      <div class="blog-card reveal">
+        <h2 class="blog-card-title"><a href="/blog/patient-satisfaction-modern-practice/">What Patient Satisfaction Really Measures in a Modern Practice</a></h2>
+        <p class="blog-card-excerpt">Satisfaction scores are everywhere in healthcare, but few practices know what they are actually measuring. The gap between what patients report on surveys and what drives them to switch providers is larger than you think.</p>
+        <a href="/blog/patient-satisfaction-modern-practice/" class="blog-card-link">Read</a>
+      </div>
+
+      <div class="blog-card reveal">
+        <h2 class="blog-card-title"><a href="/blog/actionable-vs-unactionable-feedback/">The Difference Between Feedback You Can Act On and Feedback You Can't</a></h2>
+        <p class="blog-card-excerpt">A five-star rating tells you almost nothing useful. A one-star rating with no context tells you even less. The feedback that actually changes how you operate looks very different from what most businesses collect.</p>
+        <a href="/blog/actionable-vs-unactionable-feedback/" class="blog-card-link">Read</a>
+      </div>
+
+      <div class="blog-card reveal">
+        <h2 class="blog-card-title"><a href="/blog/feedback-system-even-when-doing-well/">Why Great Service Still Needs a Feedback System</a></h2>
+        <p class="blog-card-excerpt">The businesses that think they do not need a feedback system are often the ones with the biggest blind spots. When everything seems fine, you stop looking for the problems your happiest clients are too polite to mention.</p>
+        <a href="/blog/feedback-system-even-when-doing-well/" class="blog-card-link">Read</a>
+      </div>
+
+      <div class="blog-card reveal">
+        <h2 class="blog-card-title"><a href="/blog/customer-communication-system-scales/">How to Build a Customer Communication System That Scales With Your Business</a></h2>
+        <p class="blog-card-excerpt">Personal follow-ups work when you have 20 clients. At 200, the personal touch breaks down unless you design a system around it. The goal is not automation for its own sake. It is keeping every client feeling known, even as your roster grows.</p>
+        <a href="/blog/customer-communication-system-scales/" class="blog-card-link">Read</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand-row">
+          <svg class="footer-brand-mark" aria-hidden="true"><use href="#mbf-mark"/></svg>
+          <span class="footer-brand-name">My Business Feedback</span>
+        </div>
+        <p class="footer-brand">For businesses <em>that listen</em>, and the customers who appreciate it.</p>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Company</p>
+        <ul class="footer-links">
+          <li><a href="/">About</a></li>
+          <li><a href="/how-it-works/">How It Works</a></li>
+          <li><a href="/pricing/">Pricing</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Industries</p>
+        <ul class="footer-links">
+          <li><a href="/for-law-firms/">For Law Firms</a></li>
+          <li><a href="/for-medical-practices/">For Medical Practices</a></li>
+          <li><a href="/for-service-businesses/">For Service Businesses</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <ul class="footer-links">
+          <li><a href="mailto:info@mybusinessfeedback.com">info@mybusinessfeedback.com</a></li>
+          <li>San Diego, California</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 Nexus Multimedia. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script type="module">
+    try {
+      document.documentElement.classList.add('js-anim-ready');
+      const reveals = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-in');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+        reveals.forEach(el => io.observe(el));
+      } else {
+        reveals.forEach(el => el.classList.add('is-in'));
+      }
+      setTimeout(() => {
+        reveals.forEach(el => {
+          if (!el.classList.contains('is-in')) el.classList.add('is-in');
+        });
+      }, 2000);
+    } catch (err) {
+      document.documentElement.classList.remove('js-anim-ready');
+    }
+  </script>
+
+</body>
+</html>

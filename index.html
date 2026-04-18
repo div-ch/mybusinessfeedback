@@ -12,6 +12,29 @@
 
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'><rect width='44' height='44' fill='%23FAF8F3'/><circle cx='15' cy='18' r='7' fill='none' stroke='%230F0F0E' stroke-width='1.6'/><circle cx='29' cy='26' r='7' fill='none' stroke='%23A04030' stroke-width='1.6'/><circle cx='22' cy='22' r='1.9' fill='%23A04030'/></svg>" />
 
+  <link rel="canonical" href="https://mybusinessfeedback.com/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "My Business Feedback",
+        "url": "https://mybusinessfeedback.com",
+        "parentOrganization": { "@type": "Organization", "name": "Nexus Multimedia" },
+        "contactPoint": { "@type": "ContactPoint", "email": "info@mybusinessfeedback.com", "contactType": "sales" },
+        "address": { "@type": "PostalAddress", "addressLocality": "San Diego", "addressRegion": "CA", "addressCountry": "US" }
+      },
+      {
+        "@type": "WebSite",
+        "name": "My Business Feedback",
+        "url": "https://mybusinessfeedback.com"
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" />
@@ -663,7 +686,7 @@
       grid-template-columns: 1fr;
       gap: clamp(2rem, 4vw, 3rem);
     }
-    @media (min-width: 760px) { .footer-inner { grid-template-columns: 2fr 1fr 1fr; } }
+    @media (min-width: 760px) { .footer-inner { grid-template-columns: 2fr 1fr 1fr 1fr; } }
     .footer-brand-row {
       display: flex;
       align-items: center;
@@ -767,9 +790,11 @@
         <span>My Business Feedback</span>
       </a>
       <nav aria-label="Primary">
-        <a href="#how">How it works</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact" class="nav-cta">Partner with us</a>
+        <a href="/how-it-works/">How it works</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/blog/">Blog</a>
+        <a href="/faq/">FAQ</a>
+        <a href="mailto:info@mybusinessfeedback.com" class="nav-cta">Partner with us</a>
       </nav>
     </div>
   </header>
@@ -1109,12 +1134,21 @@
       </div>
 
       <div>
-        <p class="footer-col-title">Navigate</p>
+        <p class="footer-col-title">Company</p>
         <ul class="footer-links">
-          <li><a href="#demo">A glimpse</a></li>
-          <li><a href="#how">How it works</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/how-it-works/">How It Works</a></li>
+          <li><a href="/pricing/">Pricing</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Industries</p>
+        <ul class="footer-links">
+          <li><a href="/for-law-firms/">For Law Firms</a></li>
+          <li><a href="/for-medical-practices/">For Medical Practices</a></li>
+          <li><a href="/for-service-businesses/">For Service Businesses</a></li>
         </ul>
       </div>
 
@@ -1128,8 +1162,7 @@
     </div>
 
     <div class="footer-bottom">
-      <span>&copy; 2026 My Business Feedback. Est. 2016.</span>
-      <span>All rights reserved</span>
+      <span>&copy; 2026 Nexus Multimedia. All rights reserved.</span>
     </div>
   </footer>
 
