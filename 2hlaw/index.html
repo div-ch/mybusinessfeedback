@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <title>Hollingsworth &amp; Hollingsworth APC | Share Your Feedback</title>
+  <meta name="description" content="A short note on your experience with Hollingsworth &amp; Hollingsworth APC." />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'><rect width='44' height='44' fill='%23FAF8F3'/><circle cx='15' cy='18' r='7' fill='none' stroke='%230F0F0E' stroke-width='1.6'/><circle cx='29' cy='26' r='7' fill='none' stroke='%23A04030' stroke-width='1.6'/><circle cx='22' cy='22' r='1.9' fill='%23A04030'/></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QN8FS3SJ5R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QN8FS3SJ5R');
+  </script>
+
+  <style>
+    :root {
+      --cream: #FAF8F3;
+      --cream-warm: #F3EFE4;
+      --paper: #FFFFFF;
+      --ink: #0F0F0E;
+      --ink-soft: #2A2925;
+      --muted: #57564F;
+      --muted-light: #8B8A82;
+      --rule: rgba(15, 15, 14, 0.14);
+      --forest: #1A4D3C;
+      --rust: #A04030;
+      --star-gold: #E8B84D;
+      --brand-navy: #1a2b4a;
+
+      --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --font-body: 'Instrument Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+      --pad-x: clamp(1.25rem, 4vw, 3rem);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+    img, svg { display: block; max-width: 100%; }
+    ::selection { background: var(--ink); color: var(--cream); }
+
+    .page {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(2rem, 6vw, 4rem) var(--pad-x);
+      width: 100%;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 16px;
+      padding: clamp(2rem, 5vw, 3.25rem) clamp(1.5rem, 4vw, 2.75rem);
+      width: 100%;
+      max-width: 560px;
+      box-shadow: 0 1px 2px rgba(15, 15, 14, 0.04), 0 24px 60px -24px rgba(15, 15, 14, 0.14);
+      position: relative;
+    }
+
+    .brand {
+      display: flex;
+      justify-content: center;
+      margin-bottom: clamp(1.75rem, 4vw, 2.5rem);
+      padding-bottom: clamp(1.5rem, 3vw, 2rem);
+      border-bottom: 1px solid var(--rule);
+    }
+    .client-logo {
+      height: clamp(56px, 11vw, 72px);
+      width: auto;
+      max-width: 100%;
+    }
+
+    .heading {
+      font-family: var(--font-display);
+      font-size: clamp(1.65rem, 4vw, 2.15rem);
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      font-weight: 400;
+      font-variation-settings: "opsz" 48;
+      color: var(--ink);
+      margin-bottom: 12px;
+      max-width: 22ch;
+    }
+    .heading em { font-style: italic; color: var(--rust); font-weight: 400; }
+    .body-text {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.55;
+      margin-bottom: 28px;
+      max-width: 46ch;
+    }
+
+    .upfront-name {
+      margin-bottom: 24px;
+    }
+    .upfront-name-label {
+      display: block;
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+    .upfront-name-input {
+      width: 100%;
+      border: 1px solid var(--rule);
+      background: var(--cream);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font: inherit;
+      font-size: 15px;
+      color: var(--ink);
+      transition: border-color 0.2s ease, background 0.2s ease;
+    }
+    .upfront-name-input::placeholder { color: var(--muted-light); }
+    .upfront-name-input:focus {
+      outline: 0;
+      border-color: var(--brand-navy);
+      background: var(--paper);
+    }
+
+    .stars-label {
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted-light);
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+    .stars {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-start;
+    }
+    .stars.is-locked { pointer-events: none; }
+    .star {
+      width: 48px;
+      height: 48px;
+      padding: 4px;
+      border-radius: 8px;
+      transition: transform 0.18s ease;
+      display: grid;
+      place-items: center;
+    }
+    @media (min-width: 540px) {
+      .star { width: 56px; height: 56px; }
+    }
+    .star svg { width: 100%; height: 100%; transition: fill 0.18s ease, stroke 0.18s ease; }
+    .star svg path { fill: transparent; stroke: var(--muted-light); stroke-width: 1.5; transition: all 0.18s ease; }
+    .star:hover { transform: scale(1.08); }
+    .star.is-filled svg path,
+    .stars:hover .star.is-hover-fill svg path {
+      fill: var(--star-gold);
+      stroke: var(--star-gold);
+    }
+    .star:focus-visible { outline: 2px solid var(--forest); outline-offset: 2px; }
+
+    .state { display: none; }
+    .state.is-active {
+      display: block;
+      animation: fadeUp 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 24px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.005em;
+      transition: all 0.22s ease;
+      cursor: pointer;
+      white-space: nowrap;
+      line-height: 1;
+      border: 1px solid transparent;
+    }
+    .btn-primary {
+      background: var(--ink);
+      color: var(--cream);
+      border-color: var(--ink);
+    }
+    .btn-primary:hover {
+      background: var(--forest);
+      border-color: var(--forest);
+      transform: translateY(-1px);
+    }
+    .btn-primary:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+    .btn-arrow { transition: transform 0.22s ease; }
+    .btn:hover .btn-arrow { transform: translateX(3px); }
+
+    .nudge {
+      background: var(--cream-warm);
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 24px;
+    }
+    .nudge-label {
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 500;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .nudge-text {
+      font-family: var(--font-display);
+      font-size: 15px;
+      line-height: 1.5;
+      color: var(--ink-soft);
+      font-variation-settings: "opsz" 18;
+    }
+    .nudge-text em { font-style: italic; color: var(--ink); }
+
+    .form-fields {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    @media (min-width: 480px) { .form-row { grid-template-columns: 1fr 1fr; } }
+
+    .form-input, .form-textarea {
+      width: 100%;
+      border: 1px solid var(--rule);
+      background: var(--cream);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font: inherit;
+      font-size: 15px;
+      color: var(--ink);
+      transition: border-color 0.2s ease, background 0.2s ease;
+    }
+    .form-textarea {
+      min-height: 110px;
+      resize: vertical;
+      line-height: 1.5;
+    }
+    .form-input::placeholder, .form-textarea::placeholder { color: var(--muted-light); }
+    .form-input:focus, .form-textarea:focus {
+      outline: 0;
+      border-color: var(--brand-navy);
+      background: var(--paper);
+    }
+    .form-input.has-error, .form-textarea.has-error { border-color: var(--rust); }
+
+    .direct-contact {
+      margin-top: 22px;
+      padding-top: 22px;
+      border-top: 1px solid var(--rule);
+    }
+    .direct-contact-label {
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted-light);
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+    .direct-contact-row {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    @media (min-width: 480px) {
+      .direct-contact-row { flex-direction: row; gap: 14px; }
+    }
+    .direct-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 16px;
+      background: var(--cream);
+      border: 1px solid var(--rule);
+      border-radius: 10px;
+      font-size: 14px;
+      color: var(--ink);
+      transition: all 0.2s ease;
+      flex: 1;
+    }
+    .direct-link:hover {
+      background: var(--cream-warm);
+      border-color: var(--brand-navy);
+    }
+    .direct-link svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      color: var(--muted);
+    }
+
+    .thanks-block {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 20px 22px;
+      background: var(--cream-warm);
+      border-radius: 12px;
+      margin-top: 4px;
+    }
+    .thanks-icon {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+      color: var(--forest);
+      margin-top: 2px;
+    }
+    .thanks-body {
+      font-family: var(--font-display);
+      font-size: 17px;
+      line-height: 1.4;
+      color: var(--ink);
+      font-variation-settings: "opsz" 18;
+    }
+    .thanks-body em { font-style: italic; color: var(--rust); }
+    .thanks-body strong {
+      font-weight: 500;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .powered {
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted-light);
+      margin-top: clamp(2rem, 4vw, 2.5rem);
+      font-family: var(--font-display);
+      font-style: italic;
+      font-variation-settings: "opsz" 14;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    window.CONFIG = {
+      clientId: "2hlaw",
+      clientName: "Hollingsworth & Hollingsworth APC",
+      googleReviewUrl: "https://search.google.com/local/writereview?placeid=ChIJh2mepQRV2YAR56LvMywHU1Q",
+      supportEmail: "info@2hlaw.com",
+      supportPhone: "+1 (619) 810-1427",
+      supportPhoneHref: "tel:+16198101427",
+      appsScriptUrl: "https://script.google.com/macros/s/AKfycbzF7s18rxBNyoKtdR0HhFW_EMm1FDVB5fT45qmajs6_kN10jpXu4vB-rw2OoItbIhIw9g/exec"
+    };
+  </script>
+
+  <main class="page">
+    <div class="card" id="card">
+
+      <div class="brand">
+        <img class="client-logo" src="2hlaw-logo.png" alt="Hollingsworth &amp; Hollingsworth APC" width="1000" height="330" />
+      </div>
+
+      <section class="state is-active" data-state="initial">
+        <h1 class="heading">How was your experience with <em>Hollingsworth &amp; Hollingsworth</em>?</h1>
+        <p class="body-text">Your feedback takes less than a minute and helps us serve you better.</p>
+
+        <div class="upfront-name">
+          <label class="upfront-name-label" for="upfront-name-input">Your name <span style="text-transform: none; letter-spacing: 0; color: var(--muted-light); font-weight: 400;">(optional)</span></label>
+          <input class="upfront-name-input" type="text" id="upfront-name-input" autocomplete="name" placeholder="First and last name" />
+        </div>
+
+        <p class="stars-label">Tap a star to rate your experience</p>
+        <div class="stars" id="stars" role="radiogroup" aria-label="Rate your experience">
+          <button type="button" class="star" data-star="1" aria-label="1 star">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.95 6.5 7.05.6-5.35 4.75L18.3 21.5 12 17.77 5.7 21.5l1.65-7.15L2 9.6l7.05-.6L12 2.5z"/></svg>
+          </button>
+          <button type="button" class="star" data-star="2" aria-label="2 stars">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.95 6.5 7.05.6-5.35 4.75L18.3 21.5 12 17.77 5.7 21.5l1.65-7.15L2 9.6l7.05-.6L12 2.5z"/></svg>
+          </button>
+          <button type="button" class="star" data-star="3" aria-label="3 stars">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.95 6.5 7.05.6-5.35 4.75L18.3 21.5 12 17.77 5.7 21.5l1.65-7.15L2 9.6l7.05-.6L12 2.5z"/></svg>
+          </button>
+          <button type="button" class="star" data-star="4" aria-label="4 stars">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.95 6.5 7.05.6-5.35 4.75L18.3 21.5 12 17.77 5.7 21.5l1.65-7.15L2 9.6l7.05-.6L12 2.5z"/></svg>
+          </button>
+          <button type="button" class="star" data-star="5" aria-label="5 stars">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.95 6.5 7.05.6-5.35 4.75L18.3 21.5 12 17.77 5.7 21.5l1.65-7.15L2 9.6l7.05-.6L12 2.5z"/></svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="state" data-state="positive">
+        <h1 class="heading">Thank you for the <em>wonderful feedback</em>.</h1>
+        <p class="body-text">We appreciate that more than you know. If you have a moment, we would love a quick word on Google so others can find us too.</p>
+
+        <div class="nudge">
+          <span class="nudge-label">A few helpful things to mention</span>
+          <p class="nudge-text">Which attorney helped you, the type of matter you came to us with, and what specifically went well. <em>Honest details help others find the right firm.</em></p>
+        </div>
+
+        <a href="#" class="btn btn-primary" id="google-btn" target="_blank" rel="noopener">
+          Share on Google
+          <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </section>
+
+      <section class="state" data-state="mid">
+        <h1 class="heading">Thank you for the <em>honest feedback</em>.</h1>
+        <p class="body-text">We would love to hear what could have been better. Your note goes straight to our team so we can keep improving.</p>
+        <form class="form-fields" id="mid-form" novalidate>
+          <div class="form-row">
+            <input class="form-input" type="text" name="name" placeholder="Your name (optional)" autocomplete="name" />
+            <input class="form-input" type="email" name="email" placeholder="Email (optional)" autocomplete="email" />
+          </div>
+          <textarea class="form-textarea" name="feedback" placeholder="What could we have done better?" required minlength="10"></textarea>
+          <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send feedback</button>
+        </form>
+      </section>
+
+      <section class="state" data-state="negative">
+        <h1 class="heading">We are sorry your experience <em>did not meet expectations</em>.</h1>
+        <p class="body-text">The Hollingsworth &amp; Hollingsworth team wants to hear from you directly and make this right.</p>
+        <form class="form-fields" id="negative-form" novalidate>
+          <div class="form-row">
+            <input class="form-input" type="text" name="name" placeholder="Your name (optional)" autocomplete="name" />
+            <input class="form-input" type="email" name="email" placeholder="Email (optional)" autocomplete="email" />
+          </div>
+          <input class="form-input" type="tel" name="phone" placeholder="Phone (optional)" autocomplete="tel" />
+          <textarea class="form-textarea" name="feedback" placeholder="Tell us what went wrong" required minlength="10"></textarea>
+          <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send to our team</button>
+        </form>
+
+        <div class="direct-contact">
+          <p class="direct-contact-label">Or reach us directly</p>
+          <div class="direct-contact-row">
+            <a class="direct-link" href="mailto:info@2hlaw.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              info@2hlaw.com
+            </a>
+            <a class="direct-link" href="tel:+16198101427">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +1 (619) 810-1427
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="state" data-state="done">
+        <div class="thanks-block">
+          <svg class="thanks-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="thanks-body">
+            <strong>Thank you.</strong>
+            <span id="done-message">Your feedback has been sent to the Hollingsworth &amp; Hollingsworth team.</span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <p class="powered">Powered by mybusinessfeedback.com</p>
+  </main>
+
+  <script>
+    (function() {
+      const C = window.CONFIG;
+      const card = document.getElementById('card');
+      const starsEl = document.getElementById('stars');
+      const stars = starsEl.querySelectorAll('.star');
+      const states = card.querySelectorAll('.state');
+      const googleBtn = document.getElementById('google-btn');
+      const midForm = document.getElementById('mid-form');
+      const negForm = document.getElementById('negative-form');
+      const doneMsg = document.getElementById('done-message');
+      const upfrontNameInput = document.getElementById('upfront-name-input');
+
+      let currentRating = 0;
+      let currentPath = '';
+      let upfrontName = '';
+
+      googleBtn.setAttribute('href', C.googleReviewUrl);
+
+      function showState(name) {
+        states.forEach(s => s.classList.toggle('is-active', s.dataset.state === name));
+      }
+
+      function clearHover() {
+        stars.forEach(s => s.classList.remove('is-hover-fill'));
+      }
+
+      function setSelected(n) {
+        stars.forEach((s, i) => s.classList.toggle('is-filled', i < n));
+      }
+
+      async function logFeedback(payload) {
+        if (!C.appsScriptUrl || C.appsScriptUrl === 'APPS_SCRIPT_URL_PLACEHOLDER') {
+          console.log('[MBF] Apps Script URL not configured. Payload:', payload);
+          return;
+        }
+        try {
+          await fetch(C.appsScriptUrl, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify(payload)
+          });
+        } catch (err) {
+          console.error('[MBF] Logging failed:', err);
+        }
+      }
+
+      function buildPayload(extra) {
+        return Object.assign({
+          action: 'feedback',
+          client_id: C.clientId,
+          client_name: C.clientName,
+          star_rating: currentRating,
+          path_taken: currentPath,
+          customer_name: upfrontName || '',
+          customer_email: '',
+          customer_phone: '',
+          feedback_text: '',
+          google_review_clicked: false,
+          timestamp: new Date().toISOString(),
+          page_url: window.location.href,
+          user_agent: navigator.userAgent
+        }, extra || {});
+      }
+
+      stars.forEach((star, idx) => {
+        star.addEventListener('mouseenter', () => {
+          if (currentRating > 0) return;
+          clearHover();
+          stars.forEach((s, i) => { if (i <= idx) s.classList.add('is-hover-fill'); });
+        });
+        star.addEventListener('mouseleave', () => { if (currentRating === 0) clearHover(); });
+        star.addEventListener('focus', () => {
+          if (currentRating > 0) return;
+          clearHover();
+          stars.forEach((s, i) => { if (i <= idx) s.classList.add('is-hover-fill'); });
+        });
+        star.addEventListener('blur', () => { if (currentRating === 0) clearHover(); });
+        star.addEventListener('click', () => {
+          if (currentRating > 0) return;
+
+          upfrontName = upfrontNameInput.value.trim();
+
+          const n = idx + 1;
+          currentRating = n;
+          setSelected(n);
+          clearHover();
+          starsEl.classList.add('is-locked');
+
+          if (n === 5) currentPath = 'review';
+          else if (n >= 3) currentPath = 'recover';
+          else currentPath = 'apology';
+
+          logFeedback(buildPayload());
+
+          if (typeof gtag === 'function') {
+            try { gtag('event', 'rating_selected', { value: n, client_id: C.clientId }); } catch(e){}
+          }
+
+          setTimeout(() => {
+            if (n === 5) {
+              showState('positive');
+            } else if (n >= 3) {
+              if (upfrontName) midForm.querySelector('[name="name"]').value = upfrontName;
+              showState('mid');
+            } else {
+              if (upfrontName) negForm.querySelector('[name="name"]').value = upfrontName;
+              showState('negative');
+            }
+          }, 400);
+        });
+      });
+
+      googleBtn.addEventListener('click', () => {
+        logFeedback(buildPayload({ google_review_clicked: true }));
+        if (typeof gtag === 'function') {
+          try { gtag('event', 'review_clicked', { client_id: C.clientId }); } catch(e){}
+        }
+      });
+
+      midForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const textarea = midForm.querySelector('textarea');
+        if (textarea.value.trim().length < 10) {
+          textarea.classList.add('has-error');
+          return;
+        }
+        textarea.classList.remove('has-error');
+
+        const payload = buildPayload({
+          customer_name: midForm.querySelector('[name="name"]').value.trim() || upfrontName,
+          customer_email: midForm.querySelector('[name="email"]').value.trim(),
+          feedback_text: textarea.value.trim()
+        });
+        logFeedback(payload);
+        if (typeof gtag === 'function') {
+          try { gtag('event', 'feedback_submitted', { value: currentRating, client_id: C.clientId }); } catch(e){}
+        }
+        doneMsg.textContent = 'We appreciate you taking the time to help us improve.';
+        showState('done');
+      });
+
+      negForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const textarea = negForm.querySelector('textarea');
+        if (textarea.value.trim().length < 10) {
+          textarea.classList.add('has-error');
+          return;
+        }
+        textarea.classList.remove('has-error');
+
+        const payload = buildPayload({
+          customer_name: negForm.querySelector('[name="name"]').value.trim() || upfrontName,
+          customer_email: negForm.querySelector('[name="email"]').value.trim(),
+          customer_phone: negForm.querySelector('[name="phone"]').value.trim(),
+          feedback_text: textarea.value.trim()
+        });
+        logFeedback(payload);
+        if (typeof gtag === 'function') {
+          try { gtag('event', 'feedback_submitted', { value: currentRating, client_id: C.clientId }); } catch(e){}
+        }
+        doneMsg.textContent = 'Someone from the Hollingsworth & Hollingsworth team will follow up with you shortly.';
+        showState('done');
+      });
+    })();
+  </script>
+
+</body>
+</html>
