@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Building a HIPAA-Compliant Patient Feedback Loop That Actually Works | My Business Feedback</title>
+  <meta name="description" content="HIPAA does not prevent you from collecting patient feedback. It shapes how you do it. Here is a practical guide to building a compliant, ongoing feedback channel for your practice." />
+  <link rel="canonical" href="https://mybusinessfeedback.com/blog/hipaa-patient-feedback-loop/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Building a HIPAA-Compliant Patient Feedback Loop That Actually Works" />
+  <meta property="og:description" content="HIPAA does not prevent you from collecting patient feedback. It shapes how you do it. Here is a practical guide to building a compliant feedback channel." />
+  <meta property="og:url" content="https://mybusinessfeedback.com/blog/hipaa-patient-feedback-loop/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Building a HIPAA-Compliant Patient Feedback Loop That Actually Works" />
+  <meta name="twitter:description" content="HIPAA does not prevent you from collecting patient feedback. It shapes how you do it. Here is a practical guide to building a compliant feedback channel." />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'><rect width='44' height='44' fill='%23FAF8F3'/><circle cx='15' cy='18' r='7' fill='none' stroke='%230F0F0E' stroke-width='1.6'/><circle cx='29' cy='26' r='7' fill='none' stroke='%23A04030' stroke-width='1.6'/><circle cx='22' cy='22' r='1.9' fill='%23A04030'/></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QN8FS3SJ5R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QN8FS3SJ5R');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Building a HIPAA-Compliant Patient Feedback Loop That Actually Works",
+    "author": {
+      "@type": "Organization",
+      "name": "Nexus Multimedia"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "My Business Feedback"
+    },
+    "datePublished": "2026-04-17",
+    "url": "https://mybusinessfeedback.com/blog/hipaa-patient-feedback-loop/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mybusinessfeedback.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://mybusinessfeedback.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Building a HIPAA-Compliant Patient Feedback Loop That Actually Works", "item": "https://mybusinessfeedback.com/blog/hipaa-patient-feedback-loop/" }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --cream: #FAF8F3;
+      --cream-warm: #F3EFE4;
+      --paper: #FFFFFF;
+      --ink: #0F0F0E;
+      --ink-soft: #2A2925;
+      --muted: #57564F;
+      --muted-light: #8B8A82;
+      --rule: rgba(15, 15, 14, 0.14);
+      --rule-soft: rgba(15, 15, 14, 0.06);
+      --forest: #1A4D3C;
+      --forest-dark: #143729;
+      --rust: #A04030;
+      --gold: #C89B3C;
+      --star-gold: #E8B84D;
+
+      --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --font-body: 'Instrument Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+      --container-wide: 1280px;
+      --container: 1120px;
+      --container-narrow: 860px;
+
+      --pad-x: clamp(1.25rem, 4vw, 3rem);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+    img, svg { display: block; max-width: 100%; }
+    ::selection { background: var(--ink); color: var(--cream); }
+
+    .masthead {
+      border-bottom: 1px solid var(--rule);
+      padding: 14px var(--pad-x);
+      background: var(--cream);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .masthead-inner {
+      max-width: var(--container-wide);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .wordmark {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: -0.01em;
+      font-variation-settings: "opsz" 14;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ink);
+    }
+    .wordmark-mark { width: 34px; height: 34px; flex-shrink: 0; transition: transform 0.4s ease; }
+    .wordmark:hover .wordmark-mark { transform: rotate(8deg); }
+    .masthead nav { display: flex; align-items: center; gap: 28px; font-size: 14px; }
+    .masthead nav a { color: var(--ink-soft); transition: color 0.2s ease; }
+    .masthead nav a:hover { color: var(--forest); }
+    .masthead nav .nav-cta {
+      padding: 8px 16px;
+      border: 1px solid var(--ink);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    .masthead nav .nav-cta:hover { background: var(--ink); color: var(--cream); }
+    @media (max-width: 720px) {
+      .masthead nav a:not(.nav-cta) { display: none; }
+    }
+
+    .meta-strip {
+      border-bottom: 1px solid var(--rule);
+      padding: 10px var(--pad-x);
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: var(--cream);
+    }
+    .meta-strip-inner {
+      max-width: var(--container-wide);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .meta-strip span { display: inline-flex; align-items: center; gap: 8px; }
+    .meta-strip .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--muted); display: inline-block; }
+    @media (max-width: 720px) {
+      .meta-strip-inner > :nth-child(n+3) { display: none; }
+    }
+
+    .article-header {
+      padding: clamp(3rem, 8vw, 6rem) var(--pad-x) clamp(2rem, 4vw, 3rem);
+      max-width: var(--container-narrow);
+      margin: 0 auto;
+    }
+    .article-header .eyebrow {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: inline-block;
+      margin-bottom: 18px;
+    }
+    .article-header h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      line-height: 1.05;
+      letter-spacing: -0.025em;
+      font-weight: 400;
+      font-variation-settings: "opsz" 72;
+      max-width: 22ch;
+    }
+    .article-header h1 em { font-style: italic; color: var(--rust); }
+    .article-deck {
+      margin-top: 20px;
+      font-family: var(--font-display);
+      font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+      line-height: 1.45;
+      color: var(--ink-soft);
+      font-weight: 400;
+      font-variation-settings: "opsz" 24;
+      max-width: 52ch;
+    }
+    .article-meta {
+      margin-top: 24px;
+      font-size: 13px;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    .article-body {
+      max-width: var(--container-narrow);
+      margin: 0 auto;
+      padding: 0 var(--pad-x) clamp(3rem, 8vw, 6rem);
+    }
+    .article-body p {
+      color: var(--ink-soft);
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 1.5em;
+      max-width: 65ch;
+    }
+    .article-body h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      font-weight: 400;
+      font-variation-settings: "opsz" 48;
+      margin-top: 2.5em;
+      margin-bottom: 0.8em;
+      max-width: 24ch;
+    }
+    .article-body h2 em { font-style: italic; color: var(--rust); }
+    .article-body h3 {
+      font-family: var(--font-display);
+      font-size: clamp(1.15rem, 2vw, 1.5rem);
+      line-height: 1.2;
+      letter-spacing: -0.015em;
+      font-weight: 500;
+      font-variation-settings: "opsz" 24;
+      margin-top: 2em;
+      margin-bottom: 0.6em;
+    }
+    .article-body a {
+      color: var(--ink);
+      border-bottom: 1px solid var(--rule);
+      transition: border-color 0.2s;
+    }
+    .article-body a:hover { border-color: var(--ink); }
+    .article-body ul, .article-body ol {
+      margin-bottom: 1.5em;
+      padding-left: 1.5em;
+      color: var(--ink-soft);
+      line-height: 1.7;
+    }
+    .article-body li { margin-bottom: 0.5em; }
+    .article-body blockquote {
+      border-left: 3px solid var(--rust);
+      padding: 1em 1.5em;
+      margin: 2em 0;
+      background: var(--cream-warm);
+      border-radius: 0 8px 8px 0;
+    }
+    .article-body blockquote p {
+      color: var(--ink);
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-variation-settings: "opsz" 18;
+      margin-bottom: 0;
+    }
+
+    .article-cta {
+      max-width: var(--container-narrow);
+      margin: 0 auto;
+      padding: 0 var(--pad-x) clamp(3rem, 6vw, 5rem);
+    }
+    .article-cta-box {
+      background: var(--cream-warm);
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+      padding: clamp(2rem, 4vw, 3rem);
+    }
+    .article-cta-box p {
+      font-family: var(--font-display);
+      font-size: clamp(1.125rem, 2vw, 1.35rem);
+      line-height: 1.35;
+      font-weight: 400;
+      font-variation-settings: "opsz" 24;
+      color: var(--ink-soft);
+    }
+    .article-cta-box a {
+      color: var(--forest);
+      border-bottom: 1px solid var(--forest);
+      transition: border-color 0.2s;
+    }
+    .article-cta-box a:hover { border-color: transparent; }
+
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: clamp(2.5rem, 5vw, 4rem) var(--pad-x) clamp(1.5rem, 3vw, 2rem);
+      background: var(--cream);
+    }
+    .footer-inner {
+      max-width: var(--container-wide);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: clamp(2rem, 4vw, 3rem);
+    }
+    @media (min-width: 760px) { .footer-inner { grid-template-columns: 2fr 1fr 1fr; } }
+    .footer-brand-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .footer-brand-mark { width: 36px; height: 36px; flex-shrink: 0; }
+    .footer-brand-name {
+      font-family: var(--font-display);
+      font-size: 20px;
+      letter-spacing: -0.01em;
+      font-weight: 500;
+      color: var(--ink);
+      font-variation-settings: "opsz" 18;
+    }
+    .footer-brand {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 2.4vw, 2rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      font-weight: 400;
+      max-width: 22ch;
+      font-variation-settings: "opsz" 48;
+      color: var(--ink-soft);
+    }
+    .footer-brand em { font-style: italic; color: var(--rust); }
+    .footer-col-title {
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 14px; }
+    .footer-links a {
+      color: var(--ink-soft);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .footer-links a:hover { border-color: var(--ink-soft); }
+    .footer-bottom {
+      max-width: var(--container-wide);
+      margin: clamp(2.5rem, 5vw, 4rem) auto 0;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+
+    .reveal { opacity: 1; transform: none; }
+    html.js-anim-ready .reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    html.js-anim-ready .reveal.is-in { opacity: 1; transform: none; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      html.js-anim-ready .reveal { opacity: 1 !important; transform: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="mbf-mark" viewBox="0 0 44 44">
+        <circle cx="15" cy="18" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="29" cy="26" r="7" fill="none" stroke="#A04030" stroke-width="1.5"/>
+        <circle cx="22" cy="22" r="1.9" fill="#A04030"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a href="/" class="wordmark" aria-label="My Business Feedback home">
+        <svg class="wordmark-mark" aria-hidden="true"><use href="#mbf-mark"/></svg>
+        <span>My Business Feedback</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="/how-it-works/">How it works</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/blog/">Blog</a>
+        <a href="/faq/">FAQ</a>
+        <a href="mailto:info@mybusinessfeedback.com" class="nav-cta">Partner with us</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="meta-strip">
+    <div class="meta-strip-inner">
+      <span>Blog</span>
+      <span><span class="dot"></span> For Medical Practices</span>
+      <span><span class="dot"></span> HIPAA Compliance</span>
+      <span><span class="dot"></span> Patient Feedback</span>
+    </div>
+  </div>
+
+  <main>
+    <article>
+      <header class="article-header reveal">
+        <span class="eyebrow">Patient Feedback</span>
+        <h1>Building a HIPAA-Compliant Patient Feedback Loop That <em>Actually Works</em></h1>
+        <p class="article-deck">Most practices either avoid patient feedback because of HIPAA concerns or collect it in ways that create unnecessary risk. There is a middle path, and it is simpler than you think.</p>
+        <p class="article-meta">Published April 17, 2026 &bull; 9 min read</p>
+      </header>
+
+      <div class="article-body reveal">
+
+        <p>The office manager at a dermatology practice in Southern California told us she had been wanting to collect patient feedback for two years. "Every time I brought it up," she said, "someone on the compliance team would say 'HIPAA' and the conversation would end. Nobody could tell me what was actually prohibited. They just knew it felt risky."</p>
+
+        <p>That reaction is common across medical practices of every size and specialty. HIPAA has become a conversation-stopper for patient feedback, even though the regulation does not prevent practices from asking patients how their experience was. It shapes how you collect, store, and handle that information. But it does not prohibit the collection itself.</p>
+
+        <p>The result is a gap. Practices that could benefit enormously from hearing directly from their patients avoid doing so out of regulatory caution that, on closer examination, is often misplaced.</p>
+
+        <h2>What HIPAA actually <em>says</em></h2>
+
+        <p>HIPAA governs the use and disclosure of protected health information (PHI). PHI includes any individually identifiable information that relates to a patient's health condition, the provision of healthcare, or payment for healthcare. It covers names, dates of service, diagnoses, treatment details, and dozens of other data points.</p>
+
+        <p>What HIPAA does not do is prevent a practice from communicating with its own patients. You are allowed to contact patients about their care. You are allowed to ask how their visit went. You are allowed to collect their opinions about the experience.</p>
+
+        <p>The constraints are about how you handle the data, not whether you collect it. Specifically, there are three areas where HIPAA intersects with feedback collection.</p>
+
+        <h3>1. The feedback prompt itself</h3>
+
+        <p>If you send a patient a text message or email asking about their visit, the message itself should not contain PHI. "Hi Sarah, how was your appointment today?" is fine. "Hi Sarah, how was your dermatology follow-up for your psoriasis treatment?" is not. The first acknowledges an appointment. The second discloses clinical information through a channel that may not be secure.</p>
+
+        <p>The rule is straightforward. Keep the outbound message generic. Do not reference specific procedures, diagnoses, or treatment details in the prompt. Let the patient choose what to share in their response.</p>
+
+        <h3>2. The feedback response</h3>
+
+        <p>When a patient responds to a feedback prompt, they may voluntarily include health information. A patient might write, "The wait time for my MRI was too long" or "Dr. Patel was wonderful during my biopsy." That information is now in your possession, and HIPAA applies to how you store and handle it.</p>
+
+        <p>The key distinction is that the patient disclosed this information voluntarily. The practice did not solicit specific clinical details. The patient chose to include them in their feedback. This is an important legal distinction that affects how the data is classified and what obligations attach to it.</p>
+
+        <p>Regardless of how the information arrives, it should be stored securely. That means access controls, encryption where appropriate, and clear policies about who on the team can read and act on feedback that contains clinical references.</p>
+
+        <h3>3. The feedback storage and access</h3>
+
+        <p>Patient feedback that contains any individually identifiable information should be treated as PHI for storage purposes. This does not mean you need a dedicated HIPAA-compliant survey platform. It means the data should be stored in a location with appropriate access controls and should not be accessible to anyone who does not have a legitimate need to see it.</p>
+
+        <p>For many practices, a private spreadsheet with restricted access is sufficient. The feedback lives in the same secure environment as other operational data. Staff who need to review and act on it have access. Staff who do not, do not. The same principles that govern access to patient charts govern access to patient feedback.</p>
+
+        <h2>What a compliant feedback channel <em>looks like</em></h2>
+
+        <p>A well-designed patient feedback system for a medical practice has several specific characteristics.</p>
+
+        <h3>The prompt is generic and warm</h3>
+
+        <p>The message that goes out to the patient after their visit says something like: "Thank you for visiting [Practice Name] today. We would love to hear how your experience was. It takes less than a minute." It includes a link to a branded feedback page. It does not mention the reason for the visit, the provider seen, or any clinical detail.</p>
+
+        <h3>The feedback page does not ask for clinical information</h3>
+
+        <p>The page itself asks about the experience, not the care. Good questions include: "How would you rate your overall experience?" and "Is there anything we could have done differently?" and "Would you recommend us to a friend or family member?" These questions invite the patient to share what mattered to them without prompting them to disclose clinical details.</p>
+
+        <p>If a patient chooses to mention their condition or treatment in their response, that is their prerogative. The practice did not ask for it. The practice did not create conditions where the patient felt required to disclose it. The patient volunteered it in the context of sharing their experience.</p>
+
+        <h3>Responses are stored with appropriate controls</h3>
+
+        <p>Feedback responses go to a private, access-controlled location. At <a href="/for-medical-practices/">practices we work with</a>, this is typically a private Google Sheet that is shared only with designated staff members. Access is logged. The sheet is not publicly accessible. And the practice's existing HIPAA policies extend to cover this data.</p>
+
+        <h3>Follow-up conversations stay general</h3>
+
+        <p>When a practice follows up on feedback, the follow-up should not reference clinical details that the patient shared. A good follow-up looks like: "Thank you for sharing your feedback. We appreciate you taking the time, and we are working on improving the areas you mentioned." A problematic follow-up would be: "We are sorry your chemotherapy appointment ran long."</p>
+
+        <p>The principle is consistent. The practice keeps its outbound communications general. The patient controls what clinical information, if any, enters the conversation.</p>
+
+        <h2>Common mistakes <em>practices make</em></h2>
+
+        <p>Even practices that understand the broad HIPAA framework often stumble on implementation details. Here are the most common errors we see.</p>
+
+        <h3>Using the EHR to trigger feedback</h3>
+
+        <p>Some practices try to automate feedback prompts by linking them directly to their electronic health record system. This creates two problems. First, it can embed clinical data into the feedback workflow in ways that are hard to control. Second, it often requires sharing patient contact information with a third-party survey tool, which may or may not have a Business Associate Agreement in place.</p>
+
+        <p>A simpler approach is to separate the feedback workflow from the clinical workflow entirely. The front desk team sends the feedback link as part of the checkout process, using a standard text message or email template. No clinical system integration required. No data leaves the practice's control.</p>
+
+        <h3>Asking condition-specific questions</h3>
+
+        <p>Some practices design feedback forms that ask about the specific service the patient received. "How was your colonoscopy experience?" or "Please rate your physical therapy session." These questions disclose the nature of the patient's visit through the feedback channel itself, which is problematic even if the channel is secure.</p>
+
+        <p>Keep the questions general. "How was your visit?" accomplishes the same thing without creating disclosure risk. The patient will mention the specific service if it is relevant to their feedback. You do not need to prompt it.</p>
+
+        <h3>Sharing feedback publicly without consent</h3>
+
+        <p>A practice that collects a glowing patient testimonial might be tempted to share it on their website or social media. This requires explicit, written patient authorization. The HIPAA authorization must be separate from any general consent the patient signed at intake. It must specify what information will be shared, where it will be shared, and for how long.</p>
+
+        <p>Many practices avoid this complexity entirely by keeping all feedback private and internal. The feedback is an operational tool, not a marketing asset. If a patient independently chooses to leave a public review on Google or Healthgrades, that is their decision. The practice's private feedback channel stays private.</p>
+
+        <h3>Failing to train staff</h3>
+
+        <p>The front desk team, nurses, and medical assistants who interact with patients need to understand the feedback process and the compliance boundaries around it. They need to know what to say when sending the link ("We would love to hear how your visit went"), what not to say ("Please let us know how your procedure went"), and how to handle situations where a patient shares feedback verbally at checkout.</p>
+
+        <p>A 15-minute training session at launch, with a one-page reference guide, is typically sufficient. The rules are not complex. But they need to be communicated clearly to everyone who touches the process.</p>
+
+        <h2>Building the ongoing <em>feedback loop</em></h2>
+
+        <p>A single feedback prompt after a single visit is useful but limited. The real value comes from building an ongoing channel where patient feedback flows consistently into the practice's operations.</p>
+
+        <h3>Frequency</h3>
+
+        <p>For practices with recurring patients (physical therapy, dermatology, primary care), a feedback prompt after every visit would quickly become annoying. A reasonable cadence is every third or fourth visit, or once per quarter for regular patients. For practices with primarily one-time or infrequent visits (surgery centers, urgent care), a prompt after each visit is appropriate.</p>
+
+        <h3>Review cadence</h3>
+
+        <p>Someone on the team should review new feedback daily. This does not take long. Most practices receive a handful of responses per day. The daily review ensures that urgent issues (a patient who reports a safety concern, a complaint about a specific staff interaction) are caught and addressed promptly.</p>
+
+        <p>Monthly, the practice should review feedback in aggregate. What patterns are emerging? Which providers consistently receive the highest satisfaction ratings? What operational issues keep coming up? This monthly review turns individual data points into actionable insight.</p>
+
+        <h3>Closing the loop</h3>
+
+        <p>The most important part of the feedback loop is, literally, the loop. When a patient shares feedback and the practice acts on it, the patient should know. Not with a detailed explanation. Just a signal that their input was received and valued. "Thank you for your feedback. We have made some changes based on what patients like you have told us." That sentence, sent three months after the feedback was received, turns a transaction into a relationship.</p>
+
+        <p>Patients who feel that their feedback made a difference become loyal patients. They return. They refer. And they continue to provide honest, useful feedback because they have seen evidence that it matters.</p>
+
+        <h2>The cost of <em>doing nothing</em></h2>
+
+        <p>Practices that avoid patient feedback because of HIPAA concerns are not eliminating risk. They are choosing a different kind of risk. The risk that patients are unhappy and the practice does not know. The risk that operational problems persist because nobody surfaces them. The risk that competitors who do collect feedback are learning faster and improving faster.</p>
+
+        <p>HIPAA is real, and compliance matters. But compliance and patient feedback are not in conflict. They are compatible, provided the feedback system is designed with the right guardrails. Generic prompts, secure storage, controlled access, and general follow-ups. That is the framework. It is not complicated. And the practices that implement it gain something that no clinical metric can provide: a direct line to how patients actually feel about their care.</p>
+
+        <p>For a related look at patient engagement in practice operations, see our piece on <a href="/blog/patient-satisfaction-modern-practice/">patient satisfaction in the modern practice</a>.</p>
+
+      </div>
+
+      <div class="article-cta reveal">
+        <div class="article-cta-box">
+          <p>Want a structured way to hear from every customer? <a href="/how-it-works/">Learn how My Business Feedback works.</a></p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand-row">
+          <svg class="footer-brand-mark" aria-hidden="true"><use href="#mbf-mark"/></svg>
+          <span class="footer-brand-name">My Business Feedback</span>
+        </div>
+        <p class="footer-brand">For businesses <em>that listen</em>, and the customers who appreciate it.</p>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Company</p>
+        <ul class="footer-links">
+          <li><a href="/">About</a></li>
+          <li><a href="/how-it-works/">How It Works</a></li>
+          <li><a href="/pricing/">Pricing</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Industries</p>
+        <ul class="footer-links">
+          <li><a href="/for-law-firms/">For Law Firms</a></li>
+          <li><a href="/for-medical-practices/">For Medical Practices</a></li>
+          <li><a href="/for-service-businesses/">For Service Businesses</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <ul class="footer-links">
+          <li><a href="mailto:info@mybusinessfeedback.com">info@mybusinessfeedback.com</a></li>
+          <li>San Diego, California</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 Nexus Multimedia. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script type="module">
+    try {
+      document.documentElement.classList.add('js-anim-ready');
+      const reveals = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-in');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+        reveals.forEach(el => io.observe(el));
+      } else {
+        reveals.forEach(el => el.classList.add('is-in'));
+      }
+      setTimeout(() => {
+        reveals.forEach(el => {
+          if (!el.classList.contains('is-in')) el.classList.add('is-in');
+        });
+      }, 2000);
+    } catch (err) {
+      document.documentElement.classList.remove('js-anim-ready');
+    }
+  </script>
+
+</body>
+</html>
