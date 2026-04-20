@@ -34,3 +34,13 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "The first interaction determines whether they stay or keep searching."
 - "Structured feedback gives you a direct read on whether these transplant clients are satisfied or quietly evaluating alternatives."
 - "Businesses that have been collecting structured feedback through good times have a clear picture of where their service stands when the market tightens."
+
+# Batch 3 signatures
+- "Referrals here travel through country club memberships, school networks, and neighborhood associations."
+- "Southern hospitality is real in Atlanta, and it creates a specific problem for service businesses."
+- "Portland clients actively seek out providers who feel approachable and genuine."
+- "A lobbyist or senior government staffer will not post a public complaint about a medical practice or law firm."
+- "Minnesota Nice is not just a cliche. It is a real communication pattern that creates a specific blind spot for service businesses."
+- "A dissatisfied client in Philly is more likely to vent to friends than to call your office and explain the problem."
+- "The provider who actively seeks and responds to feedback stands out from competitors who assume that no complaints means everything is fine."
+- "The four-year administration cycle compounds this."
