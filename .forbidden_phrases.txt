@@ -1,0 +1,26 @@
+FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated pages.
+
+- "Client retention in legal services depends on trust, and trust is built through attentive communication and consistent follow-through."
+- "After a case closes, the client has a complete experience to reflect on."
+- "After each client interaction, your team sends a short feedback link."
+- "The client opens a clean, branded page and shares their rating and any additional thoughts."
+- "The entire process takes less than a minute from the client's perspective."
+- "On your side, responses arrive in real time."
+- "There is no complicated software to learn, no lengthy onboarding process, and no contracts that lock you in."
+- "These factors shape how businesses in [city] build relationships with their clients and patients, and they influence the kind of feedback that matters most."
+- "Whether your practice is in [neighborhood], [neighborhood], or [neighborhood], the need to hear from the people you serve is the same."
+- "My Business Feedback provides a simple, structured way to collect honest feedback after every client or patient interaction, giving you the insights you need to improve service and strengthen relationships."
+- "We serve [city] businesses across six industries: law firms, medical practices, med spas, dental practices, home service businesses, and service businesses."
+- "Each industry guide below explains how structured feedback applies to the specific challenges and opportunities of operating in [city]."
+
+# Batch 1 signatures
+- "The gap between what clients think and what businesses hear is wide in this city, and that gap costs firms real revenue."
+- "A clunky intake process or a missed follow-up feels especially jarring to someone who works in a building where everything is optimized."
+- "Clients who are accustomed to rating hotels and restaurants on every platform bring those same habits to professional services."
+- "In a city this spread out, the only way to know how your clients feel is to ask them directly."
+- "The window to identify and address a client's concern is narrow, which makes real-time feedback collection essential rather than optional."
+- "A single negative experience is disproportionately damaging, because the lost client takes their entire neighborhood network with them."
+- "The Midwestern communication style adds a specific challenge."
+- "Co-op boards, immigration law, and small-claims disputes generate enormous volume for legal professionals across all five boroughs."
+- "LA clients are polite to your face and brutal in their online commentary."
+- "Seattle's professional culture tends toward passive dissatisfaction."
