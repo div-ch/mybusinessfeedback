@@ -328,3 +328,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "A wealth management client from Colombia, a real estate investor from Brazil, and a tech founder who relocated from New York all interact with your firm through different cultural lenses."
 - "A retired executive in Scottsdale who previously worked with top-tier firms in Chicago approaches a new advisory engagement with specific standards for communication frequency and deliverable quality."
 - "A dissatisfied consulting client in this city is more likely to simply not renew than to confront the issue directly."
+
+# Home Services & Service Businesses Batch 3 signatures (boston, philadelphia, portland, san-antonio, washington-dc)
+- "A brownstone owner in Back Bay hiring a contractor to restore plasterwork expects not just competence but a demonstrated understanding of what the property demands."
+- "A customer in Fishtown who feels overcharged or underserved will talk about that experience at the neighborhood bar, at the block party, and to their coworker by the end of the week."
+- "Portland homeowners bring a values-driven skepticism to their interactions with home service companies."
+- "Families stationed at Joint Base San Antonio need reliable service providers fast, and they share recommendations through tight-knit military community channels."
+- "Washington DC homeowners include federal professionals, lobbyists, diplomats, and policy experts who are trained to evaluate processes and outcomes with precision."
+- "The old-money networks that run through Brookline, Wellesley, and the Back Bay operate on referral dynamics where a recommendation from a trusted contact opens doors for years."
+- "A union pension fund manager selecting an accounting firm expects transparency and thoroughness."
+- "Clients in this market are inherently skeptical of firms that appear to operate on autopilot."
+- "A financial advisor working with military families at Joint Base San Antonio faces compressed timelines driven by deployment schedules and permanent change of station orders."
+- "A federal affairs consultant, a government contractor, or a senior policy advisor who is dissatisfied with their accounting firm or financial planner will not broadcast that dissatisfaction publicly."
