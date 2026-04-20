@@ -136,3 +136,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "Snowbirds who spend half the year in Brickell or Coral Gables need to feel connected to their Miami provider even during months of absence."
 - "Portland patients choose their healthcare providers with the same values-driven intentionality they apply to their food, their businesses, and their community."
 - "A 40-minute wait with no explanation is not just an inconvenience; it is a data point that shapes their perception of your entire practice."
+
+# Medical Practices Batch 7 signatures (los-angeles, chicago, boston, atlanta, tampa)
+- "Los Angeles patients measure their healthcare experience in terms of time: time spent in traffic, time waiting past their appointment slot."
+- "Entertainment-industry patients in the Westside expect total privacy in their healthcare interactions."
+- "A patient in Lincoln Park who has been seeing the same internist for five years will stay through minor inconveniences."
+- "Harsh Chicago winters affect scheduling patterns, appointment no-show rates, and patient willingness to travel for care."
+- "Every independent practice and community health center in the metro operates in the shadow of these institutions."
+- "The Cambridge biotech corridor produces a patient population that evaluates healthcare experiences with scientific precision."
+- "A patient who smiled at checkout and said everything was fine may have been frustrated by the wait, confused by the billing, or uncertain about the follow-up plan."
+- "Atlanta's healthcare market sits at the intersection of Southern warmth and corporate efficiency."
+- "Tampa Bay's retiree and snowbird population creates a patient base with specific needs around chronic condition management."
+- "A patient who previously saw a physician at NYU Langone or Johns Hopkins carries a specific benchmark."
