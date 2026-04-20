@@ -340,3 +340,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "Clients in this market are inherently skeptical of firms that appear to operate on autopilot."
 - "A financial advisor working with military families at Joint Base San Antonio faces compressed timelines driven by deployment schedules and permanent change of station orders."
 - "A federal affairs consultant, a government contractor, or a senior policy advisor who is dissatisfied with their accounting firm or financial planner will not broadcast that dissatisfaction publicly."
+
+# Home Services & Service Businesses Batch 4 signatures (minneapolis, tampa, charlotte, orlando, las-vegas)
+- "The cultural inclination in this market is to avoid confrontation, handle disappointment privately, and simply choose a different provider next time."
+- "Tampa Bay's customer base is a blend of retirees, Northeast transplants, and MacDill Air Force Base families, each bringing distinct expectations to home service interactions."
+- "A customer in Myers Park with a 1940s bungalow expects a crew that understands older construction and communicates about what they find behind the walls."
+- "Homeowners who work at the theme parks, resorts, and convention centers have spent their careers delivering polished guest experiences."
+- "A cocktail server who needs the AC repaired before a night shift has a different urgency profile than a retired accountant from Los Angeles who scheduled the same repair a week in advance."
+- "A procurement manager at a major retailer or a financial analyst at a healthcare conglomerate evaluates their personal service providers with the same rigor they apply to vendor assessments at work."
+- "Snowbird clients who spend winter months in the area need condensed engagement timelines and high-touch communication during their residency."
+- "An executive who relocated for a banking role in Uptown evaluates their Charlotte accountant, advisor, or consultant against the firms they worked with in their previous city."
+- "Residents who work in the hospitality, theme park, and convention industries evaluate every service interaction through the lens of the customer experience frameworks they use at work."
+- "The gaming, entertainment, and hospitality industries form the economic backbone, and the professionals who work in those fields need advisors who understand the specific rhythms of an industry where income is variable."
