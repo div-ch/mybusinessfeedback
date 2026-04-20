@@ -256,3 +256,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "The seasonal population in Brickell and Coral Gables creates a unique retention challenge for Miami dental practices."
 - "Portland patients approach dental care with the same values-driven intentionality they bring to every other purchasing decision."
 - "The environmental and health-conscious culture in Portland extends to dental care in specific ways."
+
+# Dental Practices Batch 7 signatures (los-angeles, chicago, boston, atlanta, tampa)
+- "Los Angeles patients measure dental experiences in terms of time: how long the drive took, how many minutes they waited past their appointment slot."
+- "Celebrity and high-profile patients expect absolute discretion, and cosmetic dentistry patients across the metro want results they can present confidently on camera."
+- "A family in Lincoln Park that finds a dentist they trust will stay for years and refer every friend in the neighborhood."
+- "The union workforce across construction, trade, and municipal sectors brings a patient population with specific insurance expectations."
+- "A patient who sees a specialist at Mass General for a medical concern carries that level of communication and professionalism into their expectations for a routine cleaning."
+- "The Cambridge biotech corridor produces a patient population that evaluates dental care with scientific precision."
+- "A Buckhead family will thank your hygienist on the way out and then discuss on the drive home whether the practice felt as professional as the ones their neighbors recommended."
+- "The film industry's growth in Atlanta has brought a population of production professionals who need dental care on unpredictable schedules."
+- "Tampa Bay's blend of retirees, MacDill Air Force Base families, and Northeast transplants creates a dental patient base with three distinct sets of expectations."
+- "Retirees who moved from the Midwest bring a lifetime of dental care habits and provider loyalty patterns."
