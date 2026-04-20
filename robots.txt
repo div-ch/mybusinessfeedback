@@ -3,5 +3,6 @@ Allow: /
 Disallow: /kitsaplaw/
 Disallow: /hemeoncall/
 Disallow: /2hlaw/
+Disallow: /nexusmultimedia/
 
 Sitemap: https://mybusinessfeedback.com/sitemap.xml
