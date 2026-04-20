@@ -268,3 +268,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "The film industry's growth in Atlanta has brought a population of production professionals who need dental care on unpredictable schedules."
 - "Tampa Bay's blend of retirees, MacDill Air Force Base families, and Northeast transplants creates a dental patient base with three distinct sets of expectations."
 - "Retirees who moved from the Midwest bring a lifetime of dental care habits and provider loyalty patterns."
+
+# Dental Practices Batch 8 signatures (phoenix, seattle, nashville, washington-dc, charlotte)
+- "A patient who spent thirty years seeing the same dentist in Milwaukee now needs to find a provider they trust in a new city."
+- "The extreme summer heat reshapes how Phoenix patients interact with dental practices from May through September."
+- "An engineer at Amazon or Microsoft who sits in a waiting room past their appointment time is not just annoyed; they are mentally scoring your practice on efficiency metrics."
+- "The Asian patient population across the Eastside and the International District brings cultural expectations about family involvement in dental decisions."
+- "A family that left a practice in Connecticut where the dentist called personally after a procedure now evaluates your Nashville practice against that benchmark."
+- "HCA Healthcare's headquarters in Nashville has elevated the standard for healthcare communication across the metro."
+- "A patient who works in government affairs and has their schedule disrupted by a late-running hygiene appointment will not file a complaint."
+- "The four-year administration cycle creates a predictable pattern of patient turnover for DC dental practices."
+- "Long-term Southern residents value personal relationships with their dentist and appreciate a warm, conversational tone."
+- "Charlotte's growth has also increased the insurance vs. fee-for-service tension in the dental market."
