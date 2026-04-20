@@ -184,3 +184,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "UCSF and Stanford set the standard for academic medicine in the Bay Area."
 - "A Duke researcher or a UNC physician assistant choosing their own primary care provider evaluates the experience with professional-level expertise."
 - "They will not argue with the front desk about a 25-minute wait, but they will factor that data point into their decision about whether to return."
+
+# Med Spas Batch 1 signatures (new-york, houston, denver, miami, portland)
+- "They schedule treatments between meetings, evaluate results against what they saw on a colleague, and make rebooking decisions within 48 hours of their appointment."
+- "The density of aesthetic competitors in Manhattan alone means that a client who had a fine but unremarkable experience at your clinic can book a consultation at three other med spas on the same block by the time they reach the subway."
+- "A client in Katy or Sugar Land who drives 35 minutes for a hydrafacial appointment is making a significant time investment."
+- "When oil and gas revenues are strong, med spa bookings for premium treatments increase."
+- "A tech worker who relocated from San Francisco or a professional who moved from Chicago arrives with a specific idea of what a med spa experience should look like."
+- "The outdoor lifestyle that defines Denver's culture creates a client base with particular concerns around skin health, sun damage, and recovery timelines."
+- "A client who had a positive treatment experience will share that with her circle."
+- "Seasonal population shifts add another layer of complexity for Miami med spas."
+- "They choose providers who feel transparent and grounded, and they evaluate their aesthetic experiences through a lens of authenticity and care."
+- "The environmental consciousness that runs through Portland's culture extends to how clients think about aesthetic treatments."
