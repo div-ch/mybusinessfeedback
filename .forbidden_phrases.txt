@@ -24,3 +24,13 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "Co-op boards, immigration law, and small-claims disputes generate enormous volume for legal professionals across all five boroughs."
 - "LA clients are polite to your face and brutal in their online commentary."
 - "Seattle's professional culture tends toward passive dissatisfaction."
+
+# Batch 2 signatures
+- "When energy prices shift, the ripple effects reach accountants, financial advisors, and real estate attorneys across the metro within weeks."
+- "A 20-minute drive in traffic becomes a meaningful barrier, and convenience often outweighs reputation when a client is deciding whether to rebook."
+- "Denver's transplant population has weaker loyalty bonds than cities with more established roots."
+- "A firm that fails to communicate clearly loses credibility fast in this community."
+- "Nashville clients are polite. They will smile, say thank you, and never mention that the wait time bothered them."
+- "The first interaction determines whether they stay or keep searching."
+- "Structured feedback gives you a direct read on whether these transplant clients are satisfied or quietly evaluating alternatives."
+- "Businesses that have been collecting structured feedback through good times have a clear picture of where their service stands when the market tightens."
