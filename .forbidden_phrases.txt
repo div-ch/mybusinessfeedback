@@ -160,3 +160,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "Each transition brings an influx of new residents and the departure of established patients."
 - "Charlotte's healthcare market serves two distinct patient populations that rarely share the same expectations."
 - "Atrium Health and Novant dominate Charlotte's hospital landscape, and patients carry those institutional benchmarks."
+
+# Medical Practices Batch 9 signatures (philadelphia, san-antonio, san-diego, minneapolis, orlando)
+- "A patient in University City who visits your practice and experiences a disorganized check-in will immediately compare that experience to Penn."
+- "Philadelphia's union workforce brings a patient population that is direct about expectations and experienced with navigating insurance."
+- "Military families need to establish care quickly, complete routine physicals within deployment windows, and transfer records efficiently."
+- "San Antonio's cost-conscious patient base pays close attention to out-of-pocket costs and copay amounts."
+- "A biotech researcher in Torrey Pines expects the same analytical precision from their physician that they apply to their own work."
+- "San Diego is MBF's home base. We built this platform here and tested it with local practices first."
+- "Patients here are polite, agreeable, and unlikely to voice complaints directly to a provider or front desk staff."
+- "Harsh winters create seasonal impacts on healthcare delivery that affect patient satisfaction in ways that are easy to overlook."
+- "Patients who work at Disney, Universal, or the surrounding hospitality industry are experts in customer experience."
+- "Winter Park and Lake Nona's affluent patient populations expect specialist-level thoroughness from every provider they visit."
