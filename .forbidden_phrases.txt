@@ -208,3 +208,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "The film and entertainment industry's growing presence in Atlanta has introduced a client segment with specific demands around privacy, scheduling flexibility, and visual results."
 - "A retired executive from Connecticut has a specific idea of what a premium aesthetic experience should feel like."
 - "The Northeast transplant population brings service standards shaped by med spa markets in New York, New Jersey, and Boston."
+
+# Med Spas Batch 3 signatures (phoenix, seattle, nashville, washington-dc, charlotte)
+- "A Scottsdale retiree who has been receiving aesthetic treatments for two decades has refined tastes and low tolerance for a generic experience."
+- "Extreme heat from May through September changes how Phoenix residents interact with med spas in practical ways."
+- "Amazon and Microsoft employees who make up a significant portion of the Eastside and South Lake Union client base are accustomed to rating, reviewing, and optimizing their experiences."
+- "The Asian client population across the Eastside and in the International District brings specific aesthetic preferences and cultural expectations around consultation style."
+- "A client who moved from Manhattan to the Gulch expects the same consultation quality and treatment precision they received on the Upper East Side."
+- "The music industry's presence in Nashville creates a client segment with distinct aesthetic needs."
+- "A senior government official will not post publicly about a treatment that did not meet expectations, but they will stop rebooking and mention their dissatisfaction to colleagues."
+- "The Northern Virginia tech corridor adds a second client profile to the DC aesthetic market."
+- "A client who moved from New Jersey to Ballantyne for a banking role arrives with specific standards for how aesthetic services should be delivered."
+- "The NASCAR legacy and deep-rooted Southern culture that define Charlotte's long-term residents create a different set of expectations."
