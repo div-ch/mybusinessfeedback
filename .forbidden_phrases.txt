@@ -64,3 +64,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "The city's culture rewards execution over appearance, which means that consistent service quality matters more here than a prestigious office address."
 - "As MBF's home market, San Diego is where we first proved that structured feedback changes how businesses build and maintain their client relationships."
 - "They compare their new Dallas dentist to the one they left in Marin County."
+
+# Law Firms Batch 1 signatures (new-york, houston, denver, miami, portland)
+- "In a market where borough-specific referral networks drive a significant share of new business, understanding what your clients value most is not optional."
+- "A corporate client in Midtown expects detailed billing breakdowns and regular status updates."
+- "When oil prices drop, the corporate clients who were approving outside counsel budgets without question suddenly scrutinize every line item."
+- "Houston's large Spanish-speaking population also shapes what good client communication looks like."
+- "These clients compare every professional interaction to the best they have experienced elsewhere."
+- "In-house counsel at these companies evaluate outside firms on responsiveness, cost predictability, and the quality of paralegal support."
+- "A recommendation from a trusted contact carries more weight than any advertisement or online profile."
+- "An immigration attorney in Doral may handle cases involving Venezuelan, Colombian, and Haitian clients in a single week."
+- "In this market, the perception of authenticity matters as much as legal competence."
+- "A firm that relies solely on informal relationship-building without any structured way to hear from these clients risks losing them to competitors who ask the right questions at the right time."
