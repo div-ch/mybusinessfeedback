@@ -172,3 +172,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "Harsh winters create seasonal impacts on healthcare delivery that affect patient satisfaction in ways that are easy to overlook."
 - "Patients who work at Disney, Universal, or the surrounding hospitality industry are experts in customer experience."
 - "Winter Park and Lake Nona's affluent patient populations expect specialist-level thoroughness from every provider they visit."
+
+# Medical Practices Batch 10 signatures (dallas, austin, las-vegas, san-francisco, raleigh)
+- "A relocated executive in Highland Park expects online scheduling that works flawlessly and test results delivered digitally within hours."
+- "Insurance billing complexity is a persistent source of patient dissatisfaction across Dallas."
+- "UT Dell Medical School has raised the bar for academic medicine in the city."
+- "Austin's outdoor lifestyle creates a patient population with specific needs around sports medicine, orthopedics, and allergy management."
+- "A retiree who saw the same internist in Chicago for twenty years now evaluates your practice against that long-term relationship."
+- "The hospitality and gaming workforce presents a different set of healthcare challenges with non-standard hours."
+- "A tech worker in SoMa expects test results delivered through a portal within hours, not days."
+- "UCSF and Stanford set the standard for academic medicine in the Bay Area."
+- "A Duke researcher or a UNC physician assistant choosing their own primary care provider evaluates the experience with professional-level expertise."
+- "They will not argue with the front desk about a 25-minute wait, but they will factor that data point into their decision about whether to return."
