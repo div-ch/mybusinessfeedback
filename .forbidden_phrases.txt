@@ -112,3 +112,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "This cultural tendency toward polite understatement creates a dangerous blind spot for law firms that rely on the absence of complaints as a signal of satisfaction."
 - "When a client who works at Disney or Universal walks into a law firm and encounters a disorganized intake process, the gap between what they expect and what they experience is immediate."
 - "Winter Park's affluent population generates estate planning, business law, and real estate work where client expectations are shaped by wealth and education."
+
+# Law Firms Batch 5 signatures (dallas, austin, las-vegas, san-francisco, raleigh)
+- "These transplant executives and their families arrive with established preferences about how attorneys should communicate."
+- "A referral from the right family in these communities opens doors for years."
+- "When a startup founder engages your firm for a Series A financing or employment agreement, they evaluate the experience the way they would evaluate a SaaS tool."
+- "Austin's rapid cost-of-living increase has made fee sensitivity a growing concern across practice areas."
+- "The clients you serve well during a downturn become your referral base during the next boom."
+- "Entertainer and performer clients present unique demands around contract review, intellectual property, and business formation."
+- "A general counsel at a Series C startup evaluates outside counsel the way they evaluate every vendor."
+- "The extreme cost of living in San Francisco makes fee sensitivity acute even among high-income clients."
+- "A research scientist choosing an IP attorney or a professor selecting an estate planner will evaluate the experience with the same rigor they apply to peer-reviewed publications."
+- "The blend of Southern courtesy and tech-sector directness that defines the Triangle creates a client base that is polite in person but decisive in their choices."
