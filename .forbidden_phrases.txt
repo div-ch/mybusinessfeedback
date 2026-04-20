@@ -148,3 +148,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "Atlanta's healthcare market sits at the intersection of Southern warmth and corporate efficiency."
 - "Tampa Bay's retiree and snowbird population creates a patient base with specific needs around chronic condition management."
 - "A patient who previously saw a physician at NYU Langone or Johns Hopkins carries a specific benchmark."
+
+# Medical Practices Batch 8 signatures (phoenix, seattle, nashville, washington-dc, charlotte)
+- "The Mayo Clinic's Phoenix campus sets an exceptionally high benchmark for patient experience in the metro."
+- "Extreme summer heat from May through September reshapes patient behavior in ways that affect every aspect of practice operations."
+- "When an Amazon engineer or a Microsoft product manager sits in a waiting room past their appointment time, they are mentally scoring your practice."
+- "The Asian patient population in the International District and across the Eastside brings cultural expectations about family involvement in medical decisions."
+- "Nashville is the headquarters of HCA Healthcare and home to some of the most influential healthcare organizations in the country."
+- "Tourism and the music industry create a transient population that interacts with urgent care and walk-in clinics during temporary stays."
+- "When a GS-15 sits in a waiting room for 40 minutes without explanation, the patience runs out quickly."
+- "Each transition brings an influx of new residents and the departure of established patients."
+- "Charlotte's healthcare market serves two distinct patient populations that rarely share the same expectations."
+- "Atrium Health and Novant dominate Charlotte's hospital landscape, and patients carry those institutional benchmarks."
