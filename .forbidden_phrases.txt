@@ -196,3 +196,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "Seasonal population shifts add another layer of complexity for Miami med spas."
 - "They choose providers who feel transparent and grounded, and they evaluate their aesthetic experiences through a lens of authenticity and care."
 - "The environmental consciousness that runs through Portland's culture extends to how clients think about aesthetic treatments."
+
+# Med Spas Batch 2 signatures (los-angeles, chicago, boston, atlanta, tampa)
+- "Los Angeles is the aesthetic capital of the United States, and the clients who walk through your doors know it."
+- "A client who drives from Pasadena to West Hollywood for a filler appointment is investing an hour of windshield time each way."
+- "A client in Lincoln Park who finds a provider they trust will return consistently and refer friends within the same neighborhood."
+- "The corporate and commodities professionals who populate River North and the Loop bring a results-oriented mindset to their aesthetic appointments."
+- "A Wellesley or Newton client who had a positive experience with your practice will recommend it to friends at the club, at school pickup, or over dinner."
+- "Boston's old-money culture and proximity to world-class medical institutions create a med spa client who is both discerning and discreet."
+- "A Buckhead client will thank your aesthetician sincerely after a treatment and then decide on the drive home that the consultation felt too rushed to justify a second visit."
+- "The film and entertainment industry's growing presence in Atlanta has introduced a client segment with specific demands around privacy, scheduling flexibility, and visual results."
+- "A retired executive from Connecticut has a specific idea of what a premium aesthetic experience should feel like."
+- "The Northeast transplant population brings service standards shaped by med spa markets in New York, New Jersey, and Boston."
