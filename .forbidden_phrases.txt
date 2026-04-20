@@ -292,3 +292,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "The Fortune 500 concentration in Minneapolis, from UnitedHealth Group to Medtronic to 3M, creates a patient base of corporate professionals."
 - "A patient who manages guest relations at a theme park or works the front desk at a resort hotel evaluates your dental practice's check-in process with trained eyes."
 - "The Brazilian and Puerto Rican communities in Orlando bring family-centered dental care preferences and referral patterns that operate through tight community networks."
+
+# Dental Practices Batch 10 signatures (dallas, austin, las-vegas, san-francisco, raleigh)
+- "A transplant executive in Highland Park expects digital intake, test results delivered through a portal, and a hygienist who takes time to review the treatment plan without being asked."
+- "Insurance billing complexity is a persistent source of patient dissatisfaction across Dallas dental practices."
+- "Tech transplants from the Bay Area and the Pacific Northwest bring expectations for digital scheduling, transparent pricing, and thorough clinical communication."
+- "Allergy season affects oral health in ways that some patients notice and want to discuss."
+- "Dealers, servers, performers, and hotel staff work non-standard hours, which means your practice's weekday-only schedule may not align with when these patients are available."
+- "Entertainers and performers who rely on their appearance for their livelihood have specific cosmetic dental needs."
+- "A software engineer in SoMa expects to book online, check in digitally, receive test results through a portal, and get follow-up communications on time."
+- "UCSF and Stanford set the standard for academic dentistry in the Bay Area."
+- "A UNC physician assistant choosing their own dentist evaluates the experience with professional expertise."
+- "The blend of Southern courtesy and academic precision that defines the Triangle creates patients who will not challenge your clinical recommendations during the appointment."
