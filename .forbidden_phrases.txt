@@ -304,3 +304,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "UCSF and Stanford set the standard for academic dentistry in the Bay Area."
 - "A UNC physician assistant choosing their own dentist evaluates the experience with professional expertise."
 - "The blend of Southern courtesy and academic precision that defines the Triangle creates patients who will not challenge your clinical recommendations during the appointment."
+
+# Home Services & Service Businesses Batch 1 signatures (new-york, houston, denver, atlanta, seattle)
+- "In a market where customers have dozens of alternatives within a few blocks, the post-job impression is what determines whether your company gets called again or gets replaced by whichever listing appears next."
+- "A crew that starts the morning in Katy and finishes in Pearland may log sixty miles of windshield time between jobs."
+- "A homeowner who relocated from Seattle or Austin expects digital scheduling confirmation, transparent pricing, and a crew that communicates proactively about arrival windows."
+- "A customer in Buckhead or Druid Hills will thank your crew, offer them water, and wave goodbye from the porch."
+- "A client who works in cloud infrastructure or machine learning at one of the region's major employers does not accept vague progress reports or unquantified results."
+- "A financial planner in Cherry Creek now sits across the table from clients who relocated from the Bay Area, Chicago, and New York."
+- "An accounting client who manages vendor performance at a major logistics firm expects the same level of communication and accountability from their personal financial advisor."
+- "A client who drives thirty minutes from Sugar Land to your Galleria office for a consultation is weighing the quality of that visit against the time investment of the commute."
+- "The metro's geography creates a trust dynamic that matters for home service businesses."
+- "The city's tech community is tightly networked, and professionals move between companies frequently."
