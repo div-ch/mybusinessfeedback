@@ -100,3 +100,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "Administration changes create four-year cycles that reshape the regulatory landscape."
 - "In-house counsel at these organizations track vendor performance metrics across every engagement."
 - "The influx of Northeast transplants to SouthPark, Ballantyne, and the surrounding suburbs has introduced a population that brings urgency and directness."
+
+# Law Firms Batch 4 signatures (philadelphia, san-antonio, san-diego, minneapolis, orlando)
+- "A Center City corporate client who felt that associate-level work was sloppy will mention it to colleagues at the Union League before they mention it to your managing partner."
+- "Union clientele in construction, trade, and municipal sectors bring a direct communication style and specific expectations about legal fees."
+- "A positive or negative experience with your firm travels through those networks quickly."
+- "San Antonio's deep Hispanic heritage shapes communication preferences in ways that go beyond language."
+- "Biotech executives in Torrey Pines and La Jolla evaluate legal counsel with the same rigor they apply to research partnerships."
+- "The challenge for San Diego law firms is that dissatisfied clients in this market rarely confront the issue directly."
+- "If your firm handles corporate transactions, employment disputes, or regulatory compliance for these organizations, the quality of your service is being evaluated whether or not you have a system to capture that evaluation."
+- "This cultural tendency toward polite understatement creates a dangerous blind spot for law firms that rely on the absence of complaints as a signal of satisfaction."
+- "When a client who works at Disney or Universal walks into a law firm and encounters a disorganized intake process, the gap between what they expect and what they experience is immediate."
+- "Winter Park's affluent population generates estate planning, business law, and real estate work where client expectations are shaped by wealth and education."
