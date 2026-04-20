@@ -280,3 +280,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "The four-year administration cycle creates a predictable pattern of patient turnover for DC dental practices."
 - "Long-term Southern residents value personal relationships with their dentist and appreciate a warm, conversational tone."
 - "Charlotte's growth has also increased the insurance vs. fee-for-service tension in the dental market."
+
+# Dental Practices Batch 9 signatures (philadelphia, san-antonio, san-diego, minneapolis, orlando)
+- "A patient in Fishtown who felt that the hygienist was too aggressive during a cleaning will tell their spouse on the ride home and their coworker by lunch the next day."
+- "Philadelphia's union workforce brings a patient population that knows their insurance benefits in detail and expects billing to be handled accurately."
+- "A military family that arrives on a new assignment needs to find a dentist within weeks."
+- "Multigenerational families often make dental care decisions collectively, and a recommendation from a grandmother or an aunt carries more weight than any marketing campaign."
+- "A researcher who scrutinizes data for a living applies that same analytical lens to the treatment plan their dentist recommends."
+- "A patient who shows up in flip-flops and a surfing t-shirt may hold exacting opinions about the quality of their dental care."
+- "Minneapolis patients are culturally inclined toward polite reserve, which creates a specific blind spot for dental practices."
+- "The Fortune 500 concentration in Minneapolis, from UnitedHealth Group to Medtronic to 3M, creates a patient base of corporate professionals."
+- "A patient who manages guest relations at a theme park or works the front desk at a resort hotel evaluates your dental practice's check-in process with trained eyes."
+- "The Brazilian and Puerto Rican communities in Orlando bring family-centered dental care preferences and referral patterns that operate through tight community networks."
