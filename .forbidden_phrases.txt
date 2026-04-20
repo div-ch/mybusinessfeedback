@@ -316,3 +316,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "A client who drives thirty minutes from Sugar Land to your Galleria office for a consultation is weighing the quality of that visit against the time investment of the commute."
 - "The metro's geography creates a trust dynamic that matters for home service businesses."
 - "The city's tech community is tightly networked, and professionals move between companies frequently."
+
+# Home Services & Service Businesses Batch 2 signatures (los-angeles, chicago, miami, phoenix, nashville)
+- "A crew that arrives without confirming the appointment window, tracks debris across a freshly cleaned floor, or leaves without explaining what was done registers as unprofessional in a market where polish matters."
+- "A roofing crew working a job in Lincoln Park interacts with a different customer profile than one in Bridgeport or the South Loop."
+- "A homeowner in Coral Gables who speaks primarily Spanish may have specific concerns about how a crew handled their property but will not necessarily communicate those concerns over the phone in English."
+- "When a homeowner's AC unit fails in July, the service call is not a convenience request."
+- "A homeowner who moved from the Northeast to Franklin or Brentwood expects the same scheduling precision and communication standards they experienced with service providers in their previous market."
+- "A client meeting a financial advisor in Century City, a marketing consultant in Santa Monica, or an architectural firm in the Arts District brings expectations shaped by a city where presentation quality is part of how competence is judged."
+- "A consulting client on LaSalle Street who has worked with your firm for three years will stay through minor hiccups if the overall relationship is strong."
+- "A wealth management client from Colombia, a real estate investor from Brazil, and a tech founder who relocated from New York all interact with your firm through different cultural lenses."
+- "A retired executive in Scottsdale who previously worked with top-tier firms in Chicago approaches a new advisory engagement with specific standards for communication frequency and deliverable quality."
+- "A dissatisfied consulting client in this city is more likely to simply not renew than to confront the issue directly."
