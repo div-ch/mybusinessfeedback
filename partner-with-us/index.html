@@ -490,7 +490,17 @@
     <section class="form-section">
       <div class="form-card reveal">
 
+        <!--
+        REFERRAL TRACKING: This form includes a hidden "referred_by" field populated from the mbf_ref cookie.
+        The Apps Script backend MUST be updated manually to:
+        1. Read e.parameter.referred_by from the incoming POST
+        2. Write it to a new column "Referred By" in the Leads sheet (column after existing fields)
+        3. Include it in the notification email to info@mybusinessfeedback.com
+        See google-apps-script/referral-update-instructions.md for the exact code change.
+        -->
+        <p id="ref-badge" style="display:none;font-size:12px;color:var(--muted-light);font-style:italic;font-family:var(--font-display);font-variation-settings:'opsz' 14;margin-bottom:16px;"></p>
         <form class="partner-form" id="partner-form" novalidate>
+          <input type="hidden" name="referred_by" id="referred_by" value="" />
           <div class="form-row">
             <div class="form-field">
               <label class="form-label" for="contact-name">Your name <span class="req">*</span></label>
@@ -708,7 +718,8 @@
           business_type: fields.type.value,
           message: fields.message.value.trim(),
           page_url: window.location.href,
-          timestamp: new Date().toISOString()
+          timestamp: new Date().toISOString(),
+          referred_by: (document.getElementById('referred_by') || {}).value || ''
         };
 
         try {
@@ -734,6 +745,32 @@
         el.addEventListener('input', function() { setError(el, false); });
         el.addEventListener('change', function() { setError(el, false); });
       });
+    })();
+  </script>
+
+  <!-- Referral tracking -->
+  <script>
+    (function() {
+      // Capture ?ref= param into 30-day cookie
+      var params = new URLSearchParams(window.location.search);
+      var ref = params.get('ref');
+      if (ref) {
+        var d = new Date();
+        d.setTime(d.getTime() + 30 * 24 * 60 * 60 * 1000);
+        document.cookie = 'mbf_ref=' + encodeURIComponent(ref) + ';expires=' + d.toUTCString() + ';path=/;SameSite=Lax';
+      }
+      // Read cookie
+      var match = document.cookie.match(/(?:^|;\s*)mbf_ref=([^;]*)/);
+      var refVal = match ? decodeURIComponent(match[1]) : '';
+      // Populate hidden field
+      var hidden = document.getElementById('referred_by');
+      if (hidden && refVal) hidden.value = refVal;
+      // Show subtle badge on partner page
+      var badge = document.getElementById('ref-badge');
+      if (badge && refVal) {
+        badge.textContent = 'Referred by ' + refVal;
+        badge.style.display = 'block';
+      }
     })();
   </script>
 </body>

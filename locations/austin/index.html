@@ -756,5 +756,18 @@
     }
   </script>
 
+
+  <!-- Referral tracking (cookie capture only) -->
+  <script>
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      var ref = params.get('ref');
+      if (ref) {
+        var d = new Date();
+        d.setTime(d.getTime() + 30 * 24 * 60 * 60 * 1000);
+        document.cookie = 'mbf_ref=' + encodeURIComponent(ref) + ';expires=' + d.toUTCString() + ';path=/;SameSite=Lax';
+      }
+    })();
+  </script>
 </body>
 </html>
