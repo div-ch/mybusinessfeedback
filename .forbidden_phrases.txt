@@ -352,3 +352,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "An executive who relocated for a banking role in Uptown evaluates their Charlotte accountant, advisor, or consultant against the firms they worked with in their previous city."
 - "Residents who work in the hospitality, theme park, and convention industries evaluate every service interaction through the lens of the customer experience frameworks they use at work."
 - "The gaming, entertainment, and hospitality industries form the economic backbone, and the professionals who work in those fields need advisors who understand the specific rhythms of an industry where income is variable."
+
+# Home Services & Service Businesses Batch 5 signatures (san-diego, dallas, austin, san-francisco, raleigh)
+- "San Diego is MBF's home market, and we built this platform with firsthand knowledge of how the local home service industry operates."
+- "A family that moved from Westchester County to Highland Park expects the same level of professionalism from their Dallas HVAC company that they experienced from their previous provider in the suburbs of New York."
+- "They evaluate your HVAC company the way they evaluate a software product: does it work as promised, is the interface intuitive, and would they recommend it to a colleague?"
+- "San Francisco's Victorian and Edwardian housing stock also creates a specialist market for restoration, painting, and structural work."
+- "A software engineer from San Jose who hires a landscaping company in Cary expects digital invoicing, clear timelines, and responsive communication."
+- "The relaxed San Diego culture can mislead service businesses into believing that their clients are easygoing about quality."
+- "A relocated executive in Highland Park who previously worked with a top-tier advisory firm in Connecticut evaluates their new Dallas provider against that prior relationship."
+- "A product lead at a SaaS company or a partner at a VC firm evaluates their accountant, consultant, or financial advisor with the same framework they use to assess business investments."
+- "A researcher at Duke, a product manager at a Triangle tech company, or a biotech executive in Research Triangle Park applies the same evidence-based thinking to choosing an accountant or a marketing agency."
+- "Austin's cost-of-living trajectory has also introduced fee sensitivity as a factor that service businesses in this market did not face a few years ago."
