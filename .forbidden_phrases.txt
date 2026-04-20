@@ -44,3 +44,13 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "A dissatisfied client in Philly is more likely to vent to friends than to call your office and explain the problem."
 - "The provider who actively seeks and responds to feedback stands out from competitors who assume that no complaints means everything is fine."
 - "The four-year administration cycle compounds this."
+
+# Batch 4 signatures
+- "Retiree clients have time and inclination to share detailed opinions, but they often do so with friends at the golf course or community pool."
+- "Charlotte's collision between Southern culture and Northeast transplant expectations creates a communication gap."
+- "Orlando residents have absorbed the hospitality industry's service standards through sheer proximity."
+- "Vegas clients are used to being surveyed. Hotels, casinos, and restaurants ask for ratings constantly."
+- "San Francisco clients are analytically rigorous and privacy-conscious, which means traditional feedback methods fail on both counts."
+- "Feedback from the first few interactions tells you whether you are earning a long-term client or losing them to the next practice in their search results."
+- "The VC-and-startup culture also creates a population that is comfortable with iterative improvement."
+- "The businesses that handle the crisis periods well earn loyalty that lasts well beyond storm season."
