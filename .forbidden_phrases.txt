@@ -76,3 +76,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "An immigration attorney in Doral may handle cases involving Venezuelan, Colombian, and Haitian clients in a single week."
 - "In this market, the perception of authenticity matters as much as legal competence."
 - "A firm that relies solely on informal relationship-building without any structured way to hear from these clients risks losing them to competitors who ask the right questions at the right time."
+
+# Law Firms Batch 2 signatures (los-angeles, chicago, boston, atlanta, tampa)
+- "Entertainment industry clients on the Westside demand absolute discretion and expect their attorneys to anticipate needs before they are articulated."
+- "Celebrity and high-profile clients present a specific challenge for LA law firms."
+- "A client who grew up in Bridgeport or Beverly expects their attorney to understand the community, not just the case."
+- "The union presence in Chicago's workforce also shapes client expectations in employment and labor law."
+- "A Wellesley or Newton family refers their attorney to a friend, that recommendation carries significant weight."
+- "Startup founders, academic researchers, and venture-backed companies evaluate legal services with analytical precision."
+- "Winning a spot on a corporate client's outside counsel panel is difficult."
+- "The growing film and entertainment industry in Atlanta has introduced a new client segment with high expectations for confidentiality and speed."
+- "Clients who relocated from the Northeast bring service expectations shaped by New York, New Jersey, and Boston legal markets."
+- "Military families often need legal work completed within tight timeframes dictated by orders, not by the court calendar."
