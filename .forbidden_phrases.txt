@@ -232,3 +232,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "The Fortune 500 presence in Minneapolis, from Target to UnitedHealth Group to Best Buy, creates a client segment of corporate professionals."
 - "Clients who work at Disney, Universal, or the surrounding resort infrastructure understand what excellent guest communication looks like because they deliver it professionally."
 - "Winter Park and Lake Nona's affluent populations invest in comprehensive treatment plans that span multiple visits over months or years."
+
+# Med Spas Batch 5 signatures (dallas, austin, las-vegas, san-francisco, raleigh)
+- "The wave of California relocations to Dallas has introduced a client population that arrives with aesthetic preferences shaped by Beverly Hills and Newport Beach."
+- "The aesthetic competition density in Highland Park, Uptown, and the Park Cities means that your med spa is competing on experience as much as on clinical outcomes."
+- "Austin's tech transplants approach their med spa experience the way they approach a product evaluation."
+- "Austin's cost-of-living increase has also made fee sensitivity a growing factor in aesthetic purchasing decisions."
+- "Las Vegas runs on appearance, and the entertainers, hospitality professionals, and gaming industry workers who make up a significant portion of the local med spa client base need aesthetic treatments that fit non-standard schedules."
+- "The absence of state income tax in Nevada has attracted a steady flow of high-net-worth individuals from California."
+- "A product manager in SoMa or a venture capitalist in Pacific Heights approaches their aesthetic consultation the way they evaluate a startup pitch."
+- "The extreme cost of living in San Francisco makes fee sensitivity acute even among high-income clients."
+- "A Duke physician who visits your med spa evaluates the consultation with clinical-grade attention to detail."
+- "The Triangle's blend of Southern courtesy and academic directness creates a client base that is polite during the appointment but analytical in their decisions afterward."
