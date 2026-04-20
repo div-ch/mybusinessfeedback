@@ -220,3 +220,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "The Northern Virginia tech corridor adds a second client profile to the DC aesthetic market."
 - "A client who moved from New Jersey to Ballantyne for a banking role arrives with specific standards for how aesthetic services should be delivered."
 - "The NASCAR legacy and deep-rooted Southern culture that define Charlotte's long-term residents create a different set of expectations."
+
+# Med Spas Batch 4 signatures (philadelphia, san-antonio, san-diego, minneapolis, orlando)
+- "A Rittenhouse Square client who felt that a treatment consultation was rushed is more likely to vent to a friend over drinks than to call your office and explain the issue."
+- "Philadelphia's Main Line suburbs add a referral network that operates through school communities, country clubs, and neighborhood associations."
+- "Military spouses and active-duty personnel make provider decisions quickly because their time at any given station is limited."
+- "Stone Oak and the northern suburbs have attracted a population of professionals with higher disposable income and expectations shaped by larger metro med spa markets."
+- "Research scientists, biotech executives, and the professionals who support them evaluate aesthetic services with the same precision they apply to their work."
+- "San Diego's relaxed culture can mislead med spa owners into thinking that their clients are easygoing about service quality."
+- "A client who found the consultation too brief or the treatment room too cold will thank your staff warmly and leave without mentioning either concern."
+- "The Fortune 500 presence in Minneapolis, from Target to UnitedHealth Group to Best Buy, creates a client segment of corporate professionals."
+- "Clients who work at Disney, Universal, or the surrounding resort infrastructure understand what excellent guest communication looks like because they deliver it professionally."
+- "Winter Park and Lake Nona's affluent populations invest in comprehensive treatment plans that span multiple visits over months or years."
