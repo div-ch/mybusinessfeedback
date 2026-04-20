@@ -244,3 +244,15 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "The extreme cost of living in San Francisco makes fee sensitivity acute even among high-income clients."
 - "A Duke physician who visits your med spa evaluates the consultation with clinical-grade attention to detail."
 - "The Triangle's blend of Southern courtesy and academic directness creates a client base that is polite during the appointment but analytical in their decisions afterward."
+
+# Dental Practices Batch 6 signatures (new-york, houston, denver, miami, portland)
+- "A patient who squeezed a cleaning into a lunch break and spent ten minutes in a waiting room past their appointment time has already formed a negative impression before the hygienist picks up an instrument."
+- "Insurance complexity adds another layer. Patients who discover unexpected out-of-pocket costs after a procedure do not always call to dispute the charge."
+- "Houston's sprawl means that a family dental practice in Katy competes not just with the practice across the street but with every dentist along a 30-mile corridor toward the Medical Center."
+- "When oil prices are high, patients are more willing to invest in cosmetic procedures, Invisalign, and elective work."
+- "Transplant patients have no history with your practice and no community ties that create inertia."
+- "The outdoor lifestyle that defines Denver's culture has practical implications for dental practices."
+- "A patient in Doral or Hialeah who did not fully understand the treatment plan or the insurance coverage explanation may not call your office to ask for clarification."
+- "The seasonal population in Brickell and Coral Gables creates a unique retention challenge for Miami dental practices."
+- "Portland patients approach dental care with the same values-driven intentionality they bring to every other purchasing decision."
+- "The environmental and health-conscious culture in Portland extends to dental care in specific ways."
