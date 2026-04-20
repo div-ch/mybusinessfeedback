@@ -54,3 +54,13 @@ FORBIDDEN PHRASES - Do not use any of these sentence structures in regenerated p
 - "Feedback from the first few interactions tells you whether you are earning a long-term client or losing them to the next practice in their search results."
 - "The VC-and-startup culture also creates a population that is comfortable with iterative improvement."
 - "The businesses that handle the crisis periods well earn loyalty that lasts well beyond storm season."
+
+# Batch 5 signatures
+- "A biotech researcher choosing a dentist or a Duke professor selecting an attorney will research options, compare experiences, and switch if the data suggests a better alternative."
+- "Austin's tech transplants bring a product-mindset to every service relationship."
+- "Dallas clients are direct about what they want but not always direct about what went wrong."
+- "A positive or negative report about a dentist or pediatrician travels through the Fort Sam Houston spouse community within days."
+- "San Diego's laid-back culture masks a quietly high standard for service quality."
+- "The city's culture rewards execution over appearance, which means that consistent service quality matters more here than a prestigious office address."
+- "As MBF's home market, San Diego is where we first proved that structured feedback changes how businesses build and maintain their client relationships."
+- "They compare their new Dallas dentist to the one they left in Marin County."
