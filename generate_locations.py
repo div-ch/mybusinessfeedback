@@ -1512,12 +1512,12 @@ ANIM_JS = """  <script type="module">
     }
   </script>"""
 
-GA_TAG = """  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QN8FS3SJ5R"></script>
+GA_TAG = """  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN8G6PRYE5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-QN8FS3SJ5R');
+    gtag('config', 'G-CN8G6PRYE5');
   </script>"""
 
 FAVICON = """  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'><rect width='44' height='44' fill='%23FAF8F3'/><circle cx='15' cy='18' r='7' fill='none' stroke='%230F0F0E' stroke-width='1.6'/><circle cx='29' cy='26' r='7' fill='none' stroke='%23A04030' stroke-width='1.6'/><circle cx='22' cy='22' r='1.9' fill='%23A04030'/></svg>" />"""
