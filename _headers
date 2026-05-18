@@ -1,0 +1,12 @@
+
+# === llms / markdown sidecars (managed by scripts/generate_llms.py) ===
+/*.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Robots-Tag: index, follow
+
+/llms.txt
+  Content-Type: text/markdown; charset=utf-8
+
+/llms-full.txt
+  Content-Type: text/markdown; charset=utf-8
+# === end llms ===

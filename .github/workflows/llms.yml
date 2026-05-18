@@ -1,0 +1,61 @@
+name: Generate AI crawler files
+
+# This site is pure static HTML committed to the repo root and served by
+# Cloudflare Pages with no build command, so the generated files must be
+# committed for Cloudflare to serve them. On every content push to main this
+# regenerates llms.txt, llms-full.txt, the per-page .md sidecars, and the
+# managed _headers block, then commits them back.
+#
+# The generator enforces a forbidden-phrase gate: if any public page ships
+# language that contradicts the customer-satisfaction positioning, the run
+# fails and nothing is committed, so this workflow fails loudly instead.
+#
+# Loop prevention: the generated artifacts are in paths-ignore, so the bot's
+# own commit does not retrigger this workflow. The default GITHUB_TOKEN also
+# does not trigger workflows, and the commit carries [skip ci] as a backstop.
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "llms.txt"
+      - "llms-full.txt"
+      - "_headers"
+      - "**/*.md"
+      - ".github/workflows/llms.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate-llms
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Generate llms.txt and .md sidecars
+        run: python3 scripts/generate_llms.py
+
+      - name: Commit regenerated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: regenerate llms.txt and .md sidecars [skip ci]"
+            git push
+          fi
