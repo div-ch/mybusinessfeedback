@@ -16,23 +16,44 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "name": "My Business Feedback",
-        "url": "https://mybusinessfeedback.com",
-        "parentOrganization": { "@type": "Organization", "name": "Nexus Multimedia" },
-        "contactPoint": { "@type": "ContactPoint", "email": "info@mybusinessfeedback.com", "contactType": "sales" },
-        "address": { "@type": "PostalAddress", "addressLocality": "San Diego", "addressRegion": "CA", "addressCountry": "US" }
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://mybusinessfeedback.com/#organization",
+      "name": "MyBusinessFeedback",
+      "url": "https://mybusinessfeedback.com/",
+      "description": "A simple, thoughtful way for businesses to hear from their customers after every service. Built for teams that take customer experience seriously.",
+      "founder": {
+        "@type": "Person",
+        "@id": "https://nexusmultimedia.ai/#div-churiwal",
+        "name": "Div Churiwal"
       },
-      {
-        "@type": "WebSite",
-        "name": "My Business Feedback",
-        "url": "https://mybusinessfeedback.com"
+      "parentOrganization": {
+        "@type": "Organization",
+        "@id": "https://nexusmultimedia.ai/#organization",
+        "name": "Nexus Multimedia",
+        "url": "https://nexusmultimedia.ai/"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Diego",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@mybusinessfeedback.com",
+        "contactType": "sales"
       }
-    ]
-  }
+    },
+    {
+      "@type": "WebSite",
+      "name": "My Business Feedback",
+      "url": "https://mybusinessfeedback.com"
+    }
+  ]
+}
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
