@@ -89,7 +89,7 @@
       border-bottom: 1px solid var(--rule);
     }
     .client-logo {
-      height: clamp(56px, 11vw, 72px);
+      height: clamp(168px, 33vw, 216px);
       width: auto;
       max-width: 100%;
     }
@@ -639,7 +639,7 @@
         if (typeof gtag === 'function') {
           try { gtag('event', 'feedback_submitted', { value: currentRating, client_id: C.clientId }); } catch(e){}
         }
-        doneMsg.textContent = 'Someone from the Fem Women's Health team will follow up with you shortly.';
+        doneMsg.textContent = 'Someone from the Fem Women\'s Health team will follow up with you shortly.';
         showState('done');
       });
     })();
