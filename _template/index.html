@@ -639,7 +639,7 @@
         if (typeof gtag === 'function') {
           try { gtag('event', 'feedback_submitted', { value: currentRating, client_id: C.clientId }); } catch(e){}
         }
-        doneMsg.textContent = 'Someone from the {{CLIENT_DISPLAY_NAME}} team will follow up with you shortly.';
+        doneMsg.textContent = "Someone from the {{CLIENT_DISPLAY_NAME}} team will follow up with you shortly.";
         showState('done');
       });
     })();
