@@ -404,6 +404,7 @@
             <input class="form-input" type="text" name="name" placeholder="Your name (optional)" autocomplete="name" />
             <input class="form-input" type="email" name="email" placeholder="Email (optional)" autocomplete="email" />
           </div>
+          <input class="form-input" type="tel" name="phone" placeholder="Phone (optional)" autocomplete="tel" />
           <textarea class="form-textarea" name="feedback" placeholder="What stood out to you? (optional)"></textarea>
           <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send feedback</button>
         </form>
@@ -417,6 +418,7 @@
             <input class="form-input" type="text" name="name" placeholder="Your name (optional)" autocomplete="name" />
             <input class="form-input" type="email" name="email" placeholder="Email (optional)" autocomplete="email" />
           </div>
+          <input class="form-input" type="tel" name="phone" placeholder="Phone (optional)" autocomplete="tel" />
           <textarea class="form-textarea" name="feedback" placeholder="What could we have done better?" required minlength="10"></textarea>
           <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send feedback</button>
         </form>
@@ -592,6 +594,7 @@
         const payload = buildPayload({
           customer_name: positiveForm.querySelector('[name="name"]').value.trim() || upfrontName,
           customer_email: positiveForm.querySelector('[name="email"]').value.trim(),
+          customer_phone: positiveForm.querySelector('[name="phone"]').value.trim(),
           feedback_text: textarea.value.trim()
         });
         logFeedback(payload);
@@ -615,6 +618,7 @@
         const payload = buildPayload({
           customer_name: midForm.querySelector('[name="name"]').value.trim() || upfrontName,
           customer_email: midForm.querySelector('[name="email"]').value.trim(),
+          customer_phone: midForm.querySelector('[name="phone"]').value.trim(),
           feedback_text: textarea.value.trim()
         });
         logFeedback(payload);
