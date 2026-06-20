@@ -400,6 +400,10 @@
         <h1 class="heading">Thank you. We'd love to hear what made your experience <em>great</em>.</h1>
         <p class="body-text">A quick note goes straight to our team. Share anything you would like us to know.</p>
         <form class="form-fields" id="positive-form" novalidate>
+          <div class="form-row">
+            <input class="form-input" type="text" name="name" placeholder="Your name (optional)" autocomplete="name" />
+            <input class="form-input" type="email" name="email" placeholder="Email (optional)" autocomplete="email" />
+          </div>
           <textarea class="form-textarea" name="feedback" placeholder="What stood out to you? (optional)"></textarea>
           <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send feedback</button>
         </form>
@@ -565,6 +569,7 @@
 
           setTimeout(() => {
             if (n === 5) {
+              if (upfrontName) positiveForm.querySelector('[name="name"]').value = upfrontName;
               showState('positive');
             } else if (n >= 3) {
               // Pre-fill name in mid form
@@ -585,7 +590,8 @@
 
         // Row 2: log the submission with the comment (comment optional on 5-star path)
         const payload = buildPayload({
-          customer_name: upfrontName,
+          customer_name: positiveForm.querySelector('[name="name"]').value.trim() || upfrontName,
+          customer_email: positiveForm.querySelector('[name="email"]').value.trim(),
           feedback_text: textarea.value.trim()
         });
         logFeedback(payload);
