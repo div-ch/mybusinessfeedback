@@ -419,7 +419,7 @@
             <input class="form-input" type="email" name="email" placeholder="Email (optional)" autocomplete="email" />
           </div>
           <input class="form-input" type="tel" name="phone" placeholder="Phone (optional)" autocomplete="tel" />
-          <textarea class="form-textarea" name="feedback" placeholder="What could we have done better?" required></textarea>
+          <textarea class="form-textarea" name="feedback" placeholder="What could we have done better?"></textarea>
           <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send feedback</button>
         </form>
       </section>
@@ -433,7 +433,7 @@
             <input class="form-input" type="email" name="email" placeholder="Email (optional)" autocomplete="email" />
           </div>
           <input class="form-input" type="tel" name="phone" placeholder="Phone (optional)" autocomplete="tel" />
-          <textarea class="form-textarea" name="feedback" placeholder="Tell us what happened" required></textarea>
+          <textarea class="form-textarea" name="feedback" placeholder="Tell us what happened"></textarea>
           <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send to our team</button>
         </form>
 
@@ -608,10 +608,6 @@
       midForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const textarea = midForm.querySelector('textarea');
-        if (!textarea.value.trim()) {
-          textarea.classList.add('has-error');
-          return;
-        }
         textarea.classList.remove('has-error');
 
         // Row 2: log the submission with the comment
@@ -632,10 +628,6 @@
       negForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const textarea = negForm.querySelector('textarea');
-        if (!textarea.value.trim()) {
-          textarea.classList.add('has-error');
-          return;
-        }
         textarea.classList.remove('has-error');
 
         // Row 2: log the submission with the comment
