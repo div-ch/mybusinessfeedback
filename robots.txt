@@ -4,6 +4,7 @@ Disallow: /kitsaplaw/
 Disallow: /hemeoncall/
 Disallow: /2hlaw/
 Disallow: /nexusmultimedia/
+Disallow: /_template/
 
 Sitemap: https://mybusinessfeedback.com/sitemap.xml
 
