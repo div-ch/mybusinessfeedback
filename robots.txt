@@ -5,6 +5,7 @@ Disallow: /hemeoncall/
 Disallow: /2hlaw/
 Disallow: /nexusmultimedia/
 Disallow: /_template/
+Disallow: /femwomenshealth/
 
 Sitemap: https://mybusinessfeedback.com/sitemap.xml
 
