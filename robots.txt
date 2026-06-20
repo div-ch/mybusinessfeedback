@@ -1,7 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /kitsaplaw/
-Disallow: /hemeoncall/
 Disallow: /2hlaw/
 Disallow: /nexusmultimedia/
 Disallow: /_template/
