@@ -194,7 +194,6 @@
 ## Company
 - [About](https://mybusinessfeedback.com/about/): My Business Feedback is built by Nexus Multimedia, a San Diego digital marketing agency. We help businesses collect structured customer feedback and act on it.
 - [Partner with Us](https://mybusinessfeedback.com/partner-with-us/): Tell us about your business and we'll set up a custom feedback system for your team. Built by Nexus Multimedia.
-- [Fem Women's Health](https://mybusinessfeedback.com/femwomenshealth/): A short note on your experience with Fem Women's Health.
 
 ## Blog
 - [Why client retention in a med spa starts with the feedback loop](https://mybusinessfeedback.com/blog/med-spa-client-retention-feedback/): Client retention in aesthetic medicine depends on understanding the full experience, not just the clinical result. Here is how a structured feedback loop changes the relationship.
