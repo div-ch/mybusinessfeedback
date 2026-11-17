@@ -129,14 +129,17 @@ def changed_files(before: str, after: str) -> list[tuple[str, str]] | None:
 def wait_for_cloudflare(sha: str) -> None:
     """Hold until Cloudflare Pages reports the push as published.
 
-    Cloudflare posts a check on each commit it deploys. First wait for the one
-    on the pushed commit. Then, if main has moved on (the AI-crawler workflow
-    commits regenerated files a few seconds after a content push), give that
-    newer commit a few minutes to publish too. A missing check is not an
-    error: the wait simply times out and the addresses are sent anyway.
+    Cloudflare posts a check on each commit it deploys. What ends up live is
+    the newest commit on main, which is not always the pushed one: the
+    AI-crawler workflow commits regenerated files a few seconds after a content
+    push, and Cloudflare then builds that commit and can leave the check on the
+    pushed one unfinished for good. So the newest commit is the one to watch.
+    If it never gets a check at all (a commit marked to skip the build), the
+    pushed commit being live is enough. Running out of time is not an error:
+    the addresses are sent anyway.
     """
     minutes = float(os.environ.get("INDEXNOW_WAIT_MINUTES", "10"))
-    follow_minutes = float(os.environ.get("INDEXNOW_FOLLOW_MINUTES", "4"))
+    follow_minutes = float(os.environ.get("INDEXNOW_FOLLOW_MINUTES", "1.5"))
     repo = os.environ.get("GITHUB_REPOSITORY", "")
     token = os.environ.get("GITHUB_TOKEN", "")
     if not (repo and token and sha):
@@ -146,17 +149,19 @@ def wait_for_cloudflare(sha: str) -> None:
     headers = {"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"}
 
     def cloudflare_check(ref: str) -> str:
-        """'' while unknown or running, otherwise the conclusion."""
+        """'none', 'running', 'success' or 'failure' for the Cloudflare check on a commit."""
         status, body = fetch(f"{GITHUB_API}/repos/{repo}/commits/{ref}/check-runs?per_page=100", headers)
         if status != 200:
-            return ""
+            return "none"
         try:
             runs = json.loads(body).get("check_runs", [])
         except ValueError:
-            return ""
+            return "none"
         mine = [r for r in runs if (r.get("app") or {}).get("slug") == CLOUDFLARE_APP]
-        if not mine or any(r.get("status") != "completed" for r in mine):
-            return ""
+        if not mine:
+            return "none"
+        if any(r.get("status") != "completed" for r in mine):
+            return "running"
         return "failure" if any(r.get("conclusion") == "failure" for r in mine) else "success"
 
     def head_of_main() -> str:
@@ -166,24 +171,29 @@ def wait_for_cloudflare(sha: str) -> None:
         except ValueError:
             return ""
 
-    def hold(ref: str, limit_minutes: float, label: str) -> bool:
-        deadline = time.time() + limit_minutes * 60
-        while True:
-            result = cloudflare_check(ref)
-            if result == "failure":
-                sys.exit(f"Cloudflare Pages reports that the deploy of {label} failed, so nothing was sent.")
-            if result == "success":
-                print(f"Cloudflare Pages has published {label}.")
-                return True
-            if time.time() > deadline:
-                print(f"No word from Cloudflare Pages on {label} after {limit_minutes:g} minutes. Carrying on.")
-                return False
-            time.sleep(POLL_SECONDS)
-
-    hold(sha, minutes, "this push")
-    head = head_of_main()
-    if head and head != sha:
-        hold(head, follow_minutes, "the commit that followed it")
+    started = time.time()
+    pushed_live_since = None
+    while True:
+        head = head_of_main() or sha
+        pushed = cloudflare_check(sha)
+        newest = pushed if head == sha else cloudflare_check(head)
+        if newest == "failure":
+            sys.exit("Cloudflare Pages reports that the deploy failed, so nothing was sent.")
+        if newest == "success":
+            print("Cloudflare Pages has published this push." if head == sha
+                  else "Cloudflare Pages has published this push and the commit that followed it.")
+            return
+        if pushed == "success":
+            # The push is live. A newer commit is on main: wait while Cloudflare is
+            # building it, but not for one it shows no sign of building.
+            pushed_live_since = pushed_live_since or time.time()
+            if newest == "none" and time.time() - pushed_live_since > follow_minutes * 60:
+                print("Cloudflare Pages has published this push. The commit after it is not being built.")
+                return
+        if time.time() - started > minutes * 60:
+            print(f"No word from Cloudflare Pages after {minutes:g} minutes. Carrying on.")
+            return
+        time.sleep(POLL_SECONDS)
 
 
 def wait_for_key(key: str, minutes: float) -> bool:
@@ -206,16 +216,29 @@ def send(key: str, urls: list[str]) -> None:
         "keyLocation": f"https://{HOST}/{key}.txt",
         "urlList": urls,
     }).encode("utf-8")
-    req = urllib.request.Request(ENDPOINT, data=body, method="POST",
-                                 headers={"Content-Type": "application/json; charset=utf-8",
-                                          "User-Agent": AGENT})
-    try:
-        with urllib.request.urlopen(req, timeout=30) as res:
-            print(f"IndexNow answered {res.status}. 200 and 202 both mean the addresses were received.")
-    except urllib.error.HTTPError as err:
-        sys.exit(f"IndexNow refused the request: {err.code} {err.reason}")
-    except (urllib.error.URLError, TimeoutError, OSError) as err:
-        sys.exit(f"IndexNow could not be reached: {err}")
+    tries = int(os.environ.get("INDEXNOW_TRIES", "4"))
+    pause = float(os.environ.get("INDEXNOW_RETRY_SECONDS", "60"))
+    for attempt in range(1, tries + 1):
+        req = urllib.request.Request(ENDPOINT, data=body, method="POST",
+                                     headers={"Content-Type": "application/json; charset=utf-8",
+                                              "User-Agent": AGENT})
+        try:
+            with urllib.request.urlopen(req, timeout=30) as res:
+                print(f"IndexNow answered {res.status}. 200 and 202 both mean the addresses were received.")
+                return
+        except urllib.error.HTTPError as err:
+            # 403 means IndexNow could not read the key file. Straight after a
+            # deploy that is usually a matter of seconds, while the file reaches
+            # the part of the network IndexNow checks from. 429 and 5xx pass too.
+            problem = f"{err.code} {err.reason}"
+            if not (err.code in (403, 429) or err.code >= 500):
+                sys.exit(f"IndexNow refused the request: {problem}")
+        except (urllib.error.URLError, TimeoutError, OSError) as err:
+            problem = f"no answer ({err})"
+        if attempt < tries:
+            print(f"IndexNow said {problem}. Trying again in {pause:g} seconds ({attempt} of {tries}).")
+            time.sleep(pause)
+    sys.exit(f"IndexNow refused the request: {problem}")
 
 
 def main() -> None:
