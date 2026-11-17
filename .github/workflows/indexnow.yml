@@ -1,0 +1,48 @@
+name: Tell search engines what changed
+
+# After a push to main, wait for Cloudflare Pages to publish, then send the
+# addresses of the pages that changed to IndexNow. One request reaches Bing,
+# Yandex, Naver, Seznam and Yep. Google does not take part: it reads sitemap.xml.
+#
+# Run it by hand (Actions > this workflow > Run workflow) to send every page in
+# the sitemap.
+#
+# The 32-character .txt file at the site root is the public key file that lets
+# the search engines check the request really comes from this site. It is not
+# a secret. Leave it in place.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**/*.html"
+      - "sitemap.xml"
+      - "1042f60029c2af81d6482a5df19acd66.txt"
+      - ".github/workflows/indexnow.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  checks: read
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Send changed pages to IndexNow
+        if: github.event_name == 'push'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/indexnow.py --before "${{ github.event.before }}" --after "${{ github.sha }}" --wait-for-deploy
+
+      - name: Send every page to IndexNow
+        if: github.event_name == 'workflow_dispatch'
+        run: python3 scripts/indexnow.py --all
