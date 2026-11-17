@@ -218,26 +218,44 @@ def send(key: str, urls: list[str]) -> None:
     }).encode("utf-8")
     tries = int(os.environ.get("INDEXNOW_TRIES", "4"))
     pause = float(os.environ.get("INDEXNOW_RETRY_SECONDS", "60"))
+    pending = False
     for attempt in range(1, tries + 1):
         req = urllib.request.Request(ENDPOINT, data=body, method="POST",
                                      headers={"Content-Type": "application/json; charset=utf-8",
                                               "User-Agent": AGENT})
         try:
             with urllib.request.urlopen(req, timeout=30) as res:
-                print(f"IndexNow answered {res.status}. 200 and 202 both mean the addresses were received.")
+                status = res.status
+            if status != 202:
+                print(f"IndexNow answered {status}. The addresses were received.")
                 return
+            # 202 means the addresses arrived before IndexNow had checked the
+            # key file, which is what a key gets the first time it is used.
+            # Bing Webmaster Tools never listed a batch answered that way, and
+            # listed the same batch at once when it was sent again minutes
+            # later and answered 200. So a 202 is sent again after a pause.
+            pending = True
+            problem = "202, received before the key file was checked"
         except urllib.error.HTTPError as err:
             # 403 means IndexNow could not read the key file. Straight after a
             # deploy that is usually a matter of seconds, while the file reaches
             # the part of the network IndexNow checks from. 429 and 5xx pass too.
+            pending = False
             problem = f"{err.code} {err.reason}"
             if not (err.code in (403, 429) or err.code >= 500):
                 sys.exit(f"IndexNow refused the request: {problem}")
         except (urllib.error.URLError, TimeoutError, OSError) as err:
+            pending = False
             problem = f"no answer ({err})"
         if attempt < tries:
-            print(f"IndexNow said {problem}. Trying again in {pause:g} seconds ({attempt} of {tries}).")
-            time.sleep(pause)
+            wait = pause * attempt
+            print(f"IndexNow said {problem}. Trying again in {wait:g} seconds ({attempt} of {tries}).")
+            time.sleep(wait)
+    if pending:
+        print(f"IndexNow still answered 202 after {tries} tries. The addresses were received, but the key file "
+              "had not been checked by then, so Bing may not list them. Running this workflow by hand sends "
+              "every page again.")
+        return
     sys.exit(f"IndexNow refused the request: {problem}")
 
 
